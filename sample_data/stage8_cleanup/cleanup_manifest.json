@@ -1,0 +1,51 @@
+{
+  "scale_mode": "METRIC_GEOREFERENCED_SCALE",
+  "is_metric": true,
+  "filter_parameters": {
+    "voxel_size_m": 0.15,
+    "sor_nb_neighbors": 30,
+    "sor_std_ratio": 1.5,
+    "ror_min_neighbors": 16,
+    "ror_radius_m": 0.8
+  },
+  "point_counts": {
+    "input_sparse_points": 12118,
+    "input_ai_dense_points": 68753,
+    "total_unfiltered_points": 80871,
+    "sor_outliers_removed": 2206,
+    "ror_isolated_removed": 31589,
+    "final_clean_points": 34143,
+    "noise_reduction_percent": 57.78
+  },
+  "metric_spatial_bounds_enu_m": {
+    "min": [
+      4.639,
+      -3.37,
+      -6.476
+    ],
+    "max": [
+      35.251,
+      76.405,
+      -1.246
+    ],
+    "span": [
+      30.612,
+      79.775,
+      5.23
+    ]
+  },
+  "point_density": {
+    "footprint_area_m2": 2442.05,
+    "points_per_m2": 13.98,
+    "bounding_volume_m3": 12770.97,
+    "points_per_m3": 2.67
+  },
+  "surface_normals": {
+    "estimated": true,
+    "oriented": true,
+    "has_normals": true
+  },
+  "output_files": {
+    "fused_clean_ply": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage8_cleanup\\fused_clean_points.ply"
+  }
+}

@@ -1,0 +1,1062 @@
+{
+  "scale_mode": "METRIC_GEOREFERENCED_SCALE",
+  "is_metric": true,
+  "scale_factor_meters_per_unit": 5.938539,
+  "sim3_rotation_matrix": [
+    [
+      0.231145,
+      -0.147355,
+      0.961696
+    ],
+    [
+      -0.972811,
+      -0.020219,
+      0.230718
+    ],
+    [
+      -0.014553,
+      -0.988877,
+      -0.148022
+    ]
+  ],
+  "sim3_translation_vector_m": [
+    0.9009,
+    33.7895,
+    0.725
+  ],
+  "trajectory_alignment_rmse_m": 1.1569,
+  "mean_residual_m": 0.9821,
+  "max_residual_m": 3.5541,
+  "reference_origin_wgs84": {
+    "latitude": 28.6139592,
+    "longitude": 77.2090215,
+    "altitude_m": 45.05
+  },
+  "aligned_pointclouds": {
+    "scaled_sparse_points": {
+      "file_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage7_fusion\\scaled_sparse_points.ply",
+      "point_count": 12118,
+      "metric_bounding_box_min_enu_m": [
+        117.988,
+        16.322,
+        -225.592
+      ],
+      "metric_bounding_box_max_enu_m": [
+        2222.098,
+        840.44,
+        139.344
+      ],
+      "metric_dimensions_m": [
+        2104.11,
+        824.117,
+        364.936
+      ]
+    },
+    "scaled_ai_dense_points": {
+      "file_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage7_fusion\\scaled_ai_dense_points.ply",
+      "point_count": 68753,
+      "metric_bounding_box_min_enu_m": [
+        4.623,
+        -3.39,
+        -8.576
+      ],
+      "metric_bounding_box_max_enu_m": [
+        703.019,
+        221.247,
+        16.542
+      ],
+      "metric_dimensions_m": [
+        698.397,
+        224.637,
+        25.118
+      ]
+    }
+  },
+  "output_files": {
+    "diagnostic_plot": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage7_fusion\\trajectory_alignment.png",
+    "scaled_sparse_points": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage7_fusion\\scaled_sparse_points.ply",
+    "scaled_ai_dense_points": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage7_fusion\\scaled_ai_dense_points.ply"
+  },
+  "frames": [
+    {
+      "image_name": "frame_000002.jpg",
+      "residual_meters": 2.6495,
+      "gps_enu_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_visual_enu_m": [
+        -2.342,
+        -1.178,
+        -0.382
+      ]
+    },
+    {
+      "image_name": "frame_000000.jpg",
+      "residual_meters": 3.5541,
+      "gps_enu_m": [
+        -0.049,
+        -2.239,
+        -0.05
+      ],
+      "aligned_visual_enu_m": [
+        -3.152,
+        -3.826,
+        -0.745
+      ]
+    },
+    {
+      "image_name": "frame_000003.jpg",
+      "residual_meters": 2.2459,
+      "gps_enu_m": [
+        0.02,
+        1.086,
+        0.02
+      ],
+      "aligned_visual_enu_m": [
+        -1.923,
+        0.062,
+        -0.452
+      ]
+    },
+    {
+      "image_name": "frame_000001.jpg",
+      "residual_meters": 3.1258,
+      "gps_enu_m": [
+        -0.029,
+        -1.164,
+        -0.03
+      ],
+      "aligned_visual_enu_m": [
+        -2.81,
+        -2.493,
+        -0.552
+      ]
+    },
+    {
+      "image_name": "frame_000004.jpg",
+      "residual_meters": 1.804,
+      "gps_enu_m": [
+        0.039,
+        2.161,
+        0.04
+      ],
+      "aligned_visual_enu_m": [
+        -1.558,
+        1.435,
+        -0.381
+      ]
+    },
+    {
+      "image_name": "frame_000006.jpg",
+      "residual_meters": 1.2273,
+      "gps_enu_m": [
+        0.078,
+        4.411,
+        0.08
+      ],
+      "aligned_visual_enu_m": [
+        -0.99,
+        3.904,
+        -0.25
+      ]
+    },
+    {
+      "image_name": "frame_000005.jpg",
+      "residual_meters": 1.4488,
+      "gps_enu_m": [
+        0.059,
+        3.325,
+        0.06
+      ],
+      "aligned_visual_enu_m": [
+        -1.242,
+        2.756,
+        -0.231
+      ]
+    },
+    {
+      "image_name": "frame_000007.jpg",
+      "residual_meters": 0.9681,
+      "gps_enu_m": [
+        0.098,
+        5.331,
+        0.1
+      ],
+      "aligned_visual_enu_m": [
+        -0.794,
+        5.041,
+        -0.141
+      ]
+    },
+    {
+      "image_name": "frame_000009.jpg",
+      "residual_meters": 0.5218,
+      "gps_enu_m": [
+        0.137,
+        7.403,
+        0.14
+      ],
+      "aligned_visual_enu_m": [
+        -0.293,
+        7.333,
+        -0.147
+      ]
+    },
+    {
+      "image_name": "frame_000011.jpg",
+      "residual_meters": 0.325,
+      "gps_enu_m": [
+        0.176,
+        9.398,
+        0.18
+      ],
+      "aligned_visual_enu_m": [
+        0.215,
+        9.529,
+        -0.115
+      ]
+    },
+    {
+      "image_name": "frame_000014.jpg",
+      "residual_meters": 0.5628,
+      "gps_enu_m": [
+        0.235,
+        12.302,
+        0.24
+      ],
+      "aligned_visual_enu_m": [
+        0.563,
+        12.759,
+        0.214
+      ]
+    },
+    {
+      "image_name": "frame_000010.jpg",
+      "residual_meters": 0.4444,
+      "gps_enu_m": [
+        0.156,
+        8.312,
+        0.16
+      ],
+      "aligned_visual_enu_m": [
+        0.057,
+        8.599,
+        -0.164
+      ]
+    },
+    {
+      "image_name": "frame_000013.jpg",
+      "residual_meters": 0.4892,
+      "gps_enu_m": [
+        0.215,
+        11.305,
+        0.22
+      ],
+      "aligned_visual_enu_m": [
+        0.415,
+        11.706,
+        0.025
+      ]
+    },
+    {
+      "image_name": "frame_000015.jpg",
+      "residual_meters": 0.7916,
+      "gps_enu_m": [
+        0.254,
+        13.3,
+        0.26
+      ],
+      "aligned_visual_enu_m": [
+        0.785,
+        13.88,
+        0.172
+      ]
+    },
+    {
+      "image_name": "frame_000008.jpg",
+      "residual_meters": 0.7398,
+      "gps_enu_m": [
+        0.117,
+        6.406,
+        0.12
+      ],
+      "aligned_visual_enu_m": [
+        -0.57,
+        6.214,
+        -0.076
+      ]
+    },
+    {
+      "image_name": "frame_000012.jpg",
+      "residual_meters": 0.2663,
+      "gps_enu_m": [
+        0.196,
+        10.396,
+        0.2
+      ],
+      "aligned_visual_enu_m": [
+        0.211,
+        10.643,
+        0.102
+      ]
+    },
+    {
+      "image_name": "frame_000017.jpg",
+      "residual_meters": 1.0333,
+      "gps_enu_m": [
+        0.293,
+        15.306,
+        0.3
+      ],
+      "aligned_visual_enu_m": [
+        1.085,
+        15.969,
+        0.324
+      ]
+    },
+    {
+      "image_name": "frame_000016.jpg",
+      "residual_meters": 0.8806,
+      "gps_enu_m": [
+        0.274,
+        14.297,
+        0.28
+      ],
+      "aligned_visual_enu_m": [
+        0.889,
+        14.927,
+        0.273
+      ]
+    },
+    {
+      "image_name": "frame_000020.jpg",
+      "residual_meters": 1.1996,
+      "gps_enu_m": [
+        0.342,
+        18.376,
+        0.36
+      ],
+      "aligned_visual_enu_m": [
+        1.3,
+        19.038,
+        0.65
+      ]
+    },
+    {
+      "image_name": "frame_000021.jpg",
+      "residual_meters": 1.3393,
+      "gps_enu_m": [
+        0.362,
+        19.451,
+        0.38
+      ],
+      "aligned_visual_enu_m": [
+        1.467,
+        20.172,
+        0.607
+      ]
+    },
+    {
+      "image_name": "frame_000018.jpg",
+      "residual_meters": 1.0884,
+      "gps_enu_m": [
+        0.303,
+        16.292,
+        0.32
+      ],
+      "aligned_visual_enu_m": [
+        1.138,
+        16.974,
+        0.474
+      ]
+    },
+    {
+      "image_name": "frame_000019.jpg",
+      "residual_meters": 1.0962,
+      "gps_enu_m": [
+        0.323,
+        17.378,
+        0.34
+      ],
+      "aligned_visual_enu_m": [
+        1.206,
+        17.98,
+        0.584
+      ]
+    },
+    {
+      "image_name": "frame_000022.jpg",
+      "residual_meters": 1.319,
+      "gps_enu_m": [
+        0.381,
+        20.448,
+        0.4
+      ],
+      "aligned_visual_enu_m": [
+        1.474,
+        21.104,
+        0.739
+      ]
+    },
+    {
+      "image_name": "frame_000023.jpg",
+      "residual_meters": 1.3595,
+      "gps_enu_m": [
+        0.401,
+        21.612,
+        0.42
+      ],
+      "aligned_visual_enu_m": [
+        1.497,
+        22.323,
+        0.796
+      ]
+    },
+    {
+      "image_name": "frame_000024.jpg",
+      "residual_meters": 1.3781,
+      "gps_enu_m": [
+        0.421,
+        22.687,
+        0.44
+      ],
+      "aligned_visual_enu_m": [
+        1.608,
+        23.301,
+        0.774
+      ]
+    },
+    {
+      "image_name": "frame_000025.jpg",
+      "residual_meters": 1.2972,
+      "gps_enu_m": [
+        0.44,
+        23.684,
+        0.46
+      ],
+      "aligned_visual_enu_m": [
+        1.521,
+        24.284,
+        0.853
+      ]
+    },
+    {
+      "image_name": "frame_000027.jpg",
+      "residual_meters": 1.3174,
+      "gps_enu_m": [
+        0.469,
+        25.846,
+        0.5
+      ],
+      "aligned_visual_enu_m": [
+        1.573,
+        26.462,
+        0.87
+      ]
+    },
+    {
+      "image_name": "frame_000026.jpg",
+      "residual_meters": 1.323,
+      "gps_enu_m": [
+        0.45,
+        24.771,
+        0.48
+      ],
+      "aligned_visual_enu_m": [
+        1.531,
+        25.336,
+        0.991
+      ]
+    },
+    {
+      "image_name": "frame_000028.jpg",
+      "residual_meters": 1.2848,
+      "gps_enu_m": [
+        0.489,
+        26.843,
+        0.52
+      ],
+      "aligned_visual_enu_m": [
+        1.595,
+        27.28,
+        1.006
+      ]
+    },
+    {
+      "image_name": "frame_000029.jpg",
+      "residual_meters": 1.241,
+      "gps_enu_m": [
+        0.499,
+        27.841,
+        0.54
+      ],
+      "aligned_visual_enu_m": [
+        1.595,
+        28.242,
+        0.961
+      ]
+    },
+    {
+      "image_name": "frame_000030.jpg",
+      "residual_meters": 1.218,
+      "gps_enu_m": [
+        0.518,
+        28.927,
+        0.57
+      ],
+      "aligned_visual_enu_m": [
+        1.526,
+        29.456,
+        1.004
+      ]
+    },
+    {
+      "image_name": "frame_000031.jpg",
+      "residual_meters": 1.2,
+      "gps_enu_m": [
+        0.538,
+        30.002,
+        0.59
+      ],
+      "aligned_visual_enu_m": [
+        1.578,
+        30.491,
+        0.935
+      ]
+    },
+    {
+      "image_name": "frame_000032.jpg",
+      "residual_meters": 1.1048,
+      "gps_enu_m": [
+        0.548,
+        31.088,
+        0.61
+      ],
+      "aligned_visual_enu_m": [
+        1.453,
+        31.608,
+        0.973
+      ]
+    },
+    {
+      "image_name": "frame_000033.jpg",
+      "residual_meters": 1.0134,
+      "gps_enu_m": [
+        0.567,
+        32.163,
+        0.63
+      ],
+      "aligned_visual_enu_m": [
+        1.464,
+        32.453,
+        1.002
+      ]
+    },
+    {
+      "image_name": "frame_000034.jpg",
+      "residual_meters": 1.0189,
+      "gps_enu_m": [
+        0.587,
+        33.16,
+        0.65
+      ],
+      "aligned_visual_enu_m": [
+        1.48,
+        33.457,
+        1.041
+      ]
+    },
+    {
+      "image_name": "frame_000035.jpg",
+      "residual_meters": 0.9368,
+      "gps_enu_m": [
+        0.597,
+        34.158,
+        0.67
+      ],
+      "aligned_visual_enu_m": [
+        1.427,
+        34.453,
+        0.987
+      ]
+    },
+    {
+      "image_name": "frame_000036.jpg",
+      "residual_meters": 0.9841,
+      "gps_enu_m": [
+        0.616,
+        35.244,
+        0.69
+      ],
+      "aligned_visual_enu_m": [
+        1.51,
+        35.526,
+        0.988
+      ]
+    },
+    {
+      "image_name": "frame_000037.jpg",
+      "residual_meters": 0.8651,
+      "gps_enu_m": [
+        0.636,
+        36.319,
+        0.71
+      ],
+      "aligned_visual_enu_m": [
+        1.385,
+        36.641,
+        0.999
+      ]
+    },
+    {
+      "image_name": "frame_000038.jpg",
+      "residual_meters": 0.8178,
+      "gps_enu_m": [
+        0.645,
+        37.317,
+        0.72
+      ],
+      "aligned_visual_enu_m": [
+        1.379,
+        37.576,
+        0.97
+      ]
+    },
+    {
+      "image_name": "frame_000039.jpg",
+      "residual_meters": 0.7841,
+      "gps_enu_m": [
+        0.665,
+        38.314,
+        0.74
+      ],
+      "aligned_visual_enu_m": [
+        1.401,
+        38.504,
+        0.931
+      ]
+    },
+    {
+      "image_name": "frame_000040.jpg",
+      "residual_meters": 0.7393,
+      "gps_enu_m": [
+        0.675,
+        39.311,
+        0.76
+      ],
+      "aligned_visual_enu_m": [
+        1.345,
+        39.48,
+        1.022
+      ]
+    },
+    {
+      "image_name": "frame_000043.jpg",
+      "residual_meters": 0.5607,
+      "gps_enu_m": [
+        0.714,
+        42.304,
+        0.81
+      ],
+      "aligned_visual_enu_m": [
+        1.24,
+        42.402,
+        0.976
+      ]
+    },
+    {
+      "image_name": "frame_000041.jpg",
+      "residual_meters": 0.6082,
+      "gps_enu_m": [
+        0.685,
+        40.309,
+        0.78
+      ],
+      "aligned_visual_enu_m": [
+        1.263,
+        40.46,
+        0.893
+      ]
+    },
+    {
+      "image_name": "frame_000042.jpg",
+      "residual_meters": 0.5769,
+      "gps_enu_m": [
+        0.694,
+        41.306,
+        0.8
+      ],
+      "aligned_visual_enu_m": [
+        1.226,
+        41.413,
+        0.998
+      ]
+    },
+    {
+      "image_name": "frame_000044.jpg",
+      "residual_meters": 0.486,
+      "gps_enu_m": [
+        0.724,
+        43.301,
+        0.83
+      ],
+      "aligned_visual_enu_m": [
+        1.185,
+        43.366,
+        0.969
+      ]
+    },
+    {
+      "image_name": "frame_000045.jpg",
+      "residual_meters": 0.4551,
+      "gps_enu_m": [
+        0.733,
+        44.299,
+        0.85
+      ],
+      "aligned_visual_enu_m": [
+        1.185,
+        44.276,
+        0.905
+      ]
+    },
+    {
+      "image_name": "frame_000047.jpg",
+      "residual_meters": 0.297,
+      "gps_enu_m": [
+        0.763,
+        46.46,
+        0.89
+      ],
+      "aligned_visual_enu_m": [
+        1.057,
+        46.504,
+        0.896
+      ]
+    },
+    {
+      "image_name": "frame_000046.jpg",
+      "residual_meters": 0.4166,
+      "gps_enu_m": [
+        0.743,
+        45.385,
+        0.87
+      ],
+      "aligned_visual_enu_m": [
+        1.151,
+        45.428,
+        0.942
+      ]
+    },
+    {
+      "image_name": "frame_000048.jpg",
+      "residual_meters": 0.3276,
+      "gps_enu_m": [
+        0.773,
+        47.458,
+        0.91
+      ],
+      "aligned_visual_enu_m": [
+        1.067,
+        47.325,
+        0.963
+      ]
+    },
+    {
+      "image_name": "frame_000049.jpg",
+      "residual_meters": 0.2468,
+      "gps_enu_m": [
+        0.782,
+        48.455,
+        0.93
+      ],
+      "aligned_visual_enu_m": [
+        0.975,
+        48.31,
+        0.98
+      ]
+    },
+    {
+      "image_name": "frame_000050.jpg",
+      "residual_meters": 0.1942,
+      "gps_enu_m": [
+        0.792,
+        49.541,
+        0.94
+      ],
+      "aligned_visual_enu_m": [
+        0.939,
+        49.414,
+        0.946
+      ]
+    },
+    {
+      "image_name": "frame_000051.jpg",
+      "residual_meters": 0.2923,
+      "gps_enu_m": [
+        0.802,
+        50.616,
+        0.96
+      ],
+      "aligned_visual_enu_m": [
+        0.868,
+        50.332,
+        0.979
+      ]
+    },
+    {
+      "image_name": "frame_000052.jpg",
+      "residual_meters": 0.3209,
+      "gps_enu_m": [
+        0.812,
+        51.702,
+        0.98
+      ],
+      "aligned_visual_enu_m": [
+        0.821,
+        51.382,
+        0.959
+      ]
+    },
+    {
+      "image_name": "frame_000053.jpg",
+      "residual_meters": 0.3789,
+      "gps_enu_m": [
+        0.822,
+        52.866,
+        1.0
+      ],
+      "aligned_visual_enu_m": [
+        0.695,
+        52.514,
+        0.94
+      ]
+    },
+    {
+      "image_name": "frame_000054.jpg",
+      "residual_meters": 0.4416,
+      "gps_enu_m": [
+        0.831,
+        54.03,
+        1.02
+      ],
+      "aligned_visual_enu_m": [
+        0.756,
+        53.611,
+        0.902
+      ]
+    },
+    {
+      "image_name": "frame_000055.jpg",
+      "residual_meters": 0.3927,
+      "gps_enu_m": [
+        0.841,
+        55.193,
+        1.04
+      ],
+      "aligned_visual_enu_m": [
+        0.578,
+        54.903,
+        1.015
+      ]
+    },
+    {
+      "image_name": "frame_000056.jpg",
+      "residual_meters": 0.5746,
+      "gps_enu_m": [
+        0.851,
+        56.269,
+        1.06
+      ],
+      "aligned_visual_enu_m": [
+        0.529,
+        55.804,
+        0.957
+      ]
+    },
+    {
+      "image_name": "frame_000057.jpg",
+      "residual_meters": 0.6465,
+      "gps_enu_m": [
+        0.861,
+        57.266,
+        1.07
+      ],
+      "aligned_visual_enu_m": [
+        0.423,
+        56.813,
+        0.925
+      ]
+    },
+    {
+      "image_name": "frame_000058.jpg",
+      "residual_meters": 0.7209,
+      "gps_enu_m": [
+        0.861,
+        58.263,
+        1.09
+      ],
+      "aligned_visual_enu_m": [
+        0.379,
+        57.745,
+        0.954
+      ]
+    },
+    {
+      "image_name": "frame_000060.jpg",
+      "residual_meters": 0.869,
+      "gps_enu_m": [
+        0.88,
+        60.425,
+        1.13
+      ],
+      "aligned_visual_enu_m": [
+        0.252,
+        59.854,
+        0.945
+      ]
+    },
+    {
+      "image_name": "frame_000059.jpg",
+      "residual_meters": 0.712,
+      "gps_enu_m": [
+        0.87,
+        59.35,
+        1.11
+      ],
+      "aligned_visual_enu_m": [
+        0.302,
+        58.966,
+        0.92
+      ]
+    },
+    {
+      "image_name": "frame_000061.jpg",
+      "residual_meters": 0.9015,
+      "gps_enu_m": [
+        0.88,
+        61.422,
+        1.14
+      ],
+      "aligned_visual_enu_m": [
+        0.216,
+        60.878,
+        0.867
+      ]
+    },
+    {
+      "image_name": "frame_000063.jpg",
+      "residual_meters": 0.9619,
+      "gps_enu_m": [
+        0.9,
+        63.661,
+        1.18
+      ],
+      "aligned_visual_enu_m": [
+        0.062,
+        63.269,
+        0.917
+      ]
+    },
+    {
+      "image_name": "frame_000062.jpg",
+      "residual_meters": 0.9199,
+      "gps_enu_m": [
+        0.89,
+        62.497,
+        1.16
+      ],
+      "aligned_visual_enu_m": [
+        0.058,
+        62.178,
+        0.931
+      ]
+    },
+    {
+      "image_name": "frame_000064.jpg",
+      "residual_meters": 1.0484,
+      "gps_enu_m": [
+        0.9,
+        64.825,
+        1.2
+      ],
+      "aligned_visual_enu_m": [
+        -0.05,
+        64.465,
+        0.938
+      ]
+    },
+    {
+      "image_name": "frame_000065.jpg",
+      "residual_meters": 1.0243,
+      "gps_enu_m": [
+        0.91,
+        65.988,
+        1.21
+      ],
+      "aligned_visual_enu_m": [
+        -0.033,
+        65.69,
+        0.943
+      ]
+    },
+    {
+      "image_name": "frame_000067.jpg",
+      "residual_meters": 1.2956,
+      "gps_enu_m": [
+        0.919,
+        68.316,
+        1.25
+      ],
+      "aligned_visual_enu_m": [
+        -0.306,
+        68.053,
+        0.921
+      ]
+    },
+    {
+      "image_name": "frame_000066.jpg",
+      "residual_meters": 1.2334,
+      "gps_enu_m": [
+        0.919,
+        67.23,
+        1.23
+      ],
+      "aligned_visual_enu_m": [
+        -0.251,
+        66.991,
+        0.923
+      ]
+    },
+    {
+      "image_name": "frame_000068.jpg",
+      "residual_meters": 1.4037,
+      "gps_enu_m": [
+        0.919,
+        69.557,
+        1.27
+      ],
+      "aligned_visual_enu_m": [
+        -0.402,
+        69.295,
+        0.875
+      ]
+    },
+    {
+      "image_name": "frame_000069.jpg",
+      "residual_meters": 1.4382,
+      "gps_enu_m": [
+        0.929,
+        70.721,
+        1.28
+      ],
+      "aligned_visual_enu_m": [
+        -0.444,
+        70.54,
+        0.891
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Node
+node_modules
+dist
+dist-ssr
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Large binaries and model weights (>50MB)
+*.db
+*.sqlite
+*.sqlite3
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.bin
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

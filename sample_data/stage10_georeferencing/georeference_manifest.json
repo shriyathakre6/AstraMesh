@@ -1,0 +1,50 @@
+{
+  "scale_mode": "METRIC_GEOREFERENCED_SCALE",
+  "is_metric": true,
+  "crs": {
+    "projected_crs": "UTM Zone 43N",
+    "projected_epsg": 32643,
+    "geographic_crs": "WGS84",
+    "geographic_epsg": 4326
+  },
+  "reference_origin": {
+    "latitude": 28.6139592,
+    "longitude": 77.2090215,
+    "altitude_m": 45.05,
+    "utm_easting_m": 715982.275,
+    "utm_northing_m": 3167211.42
+  },
+  "bounding_box_utm_m": {
+    "easting_min": 715986.914,
+    "easting_max": 716017.526,
+    "northing_min": 3167208.049,
+    "northing_max": 3167287.825,
+    "span_easting_m": 30.612,
+    "span_northing_m": 79.775
+  },
+  "bounding_box_wgs84_deg": {
+    "lon_min": 77.2090685,
+    "lon_max": 77.2093906,
+    "lat_min": 28.6139277,
+    "lat_max": 28.6146444
+  },
+  "elevation_statistics_m": {
+    "min": 38.57,
+    "max": 43.8,
+    "mean": 40.45,
+    "relief_span_m": 5.23
+  },
+  "dsm_raster": {
+    "grid_width_pixels": 127,
+    "grid_height_pixels": 324,
+    "pixel_size_m": 0.25,
+    "cell_area_m2": 0.0625
+  },
+  "output_files": {
+    "dsm_elevation_tif": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage10_georeferencing\\dsm_elevation.tif",
+    "dsm_world_file_tfw": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage10_georeferencing\\dsm_elevation.tfw",
+    "dsm_projection_prj": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage10_georeferencing\\dsm_elevation.prj",
+    "dsm_relief_preview": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage10_georeferencing\\dsm_relief_preview.jpg",
+    "survey_boundary_geojson": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage10_georeferencing\\survey_boundary.geojson"
+  }
+}

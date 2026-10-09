@@ -1,0 +1,1410 @@
+{
+  "total_evaluated": 70,
+  "kept_count": 70,
+  "dropped_count": 0,
+  "drop_threshold": 0.3,
+  "mean_blur_variance": 1536.34,
+  "mean_quality_score": 0.9811,
+  "frames": [
+    {
+      "frame_id": "frame_000000",
+      "file_name": "frame_000000.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000000.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000000.jpg",
+      "blur_variance": 2225.86,
+      "blur_score": 1.0,
+      "exposure_score": 0.9489,
+      "shadow_fraction": 0.0079,
+      "highlight_fraction": 0.0262,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9821,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.613939,
+        "longitude": 77.209021,
+        "altitude_m": 45.0,
+        "speed_mps": 5.0
+      }
+    },
+    {
+      "frame_id": "frame_000001",
+      "file_name": "frame_000001.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000001.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000001.jpg",
+      "blur_variance": 1510.95,
+      "blur_score": 1.0,
+      "exposure_score": 0.9548,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.025,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9842,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6139487,
+        "longitude": 77.2090212,
+        "altitude_m": 45.02,
+        "speed_mps": 5.01
+      }
+    },
+    {
+      "frame_id": "frame_000002",
+      "file_name": "frame_000002.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000002.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000002.jpg",
+      "blur_variance": 1808.18,
+      "blur_score": 1.0,
+      "exposure_score": 0.952,
+      "shadow_fraction": 0.0066,
+      "highlight_fraction": 0.0254,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9832,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6139592,
+        "longitude": 77.2090215,
+        "altitude_m": 45.05,
+        "speed_mps": 5.03
+      }
+    },
+    {
+      "frame_id": "frame_000003",
+      "file_name": "frame_000003.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000003.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000003.jpg",
+      "blur_variance": 1619.07,
+      "blur_score": 1.0,
+      "exposure_score": 0.9533,
+      "shadow_fraction": 0.0059,
+      "highlight_fraction": 0.0253,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9837,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.613969,
+        "longitude": 77.2090217,
+        "altitude_m": 45.07,
+        "speed_mps": 5.04
+      }
+    },
+    {
+      "frame_id": "frame_000004",
+      "file_name": "frame_000004.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000004.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000004.jpg",
+      "blur_variance": 1590.7,
+      "blur_score": 1.0,
+      "exposure_score": 0.9538,
+      "shadow_fraction": 0.0059,
+      "highlight_fraction": 0.0249,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9838,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6139787,
+        "longitude": 77.2090219,
+        "altitude_m": 45.09,
+        "speed_mps": 5.05
+      }
+    },
+    {
+      "frame_id": "frame_000005",
+      "file_name": "frame_000005.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000005.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000005.jpg",
+      "blur_variance": 1389.4,
+      "blur_score": 1.0,
+      "exposure_score": 0.9557,
+      "shadow_fraction": 0.0049,
+      "highlight_fraction": 0.0246,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9845,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6139892,
+        "longitude": 77.2090221,
+        "altitude_m": 45.11,
+        "speed_mps": 5.07
+      }
+    },
+    {
+      "frame_id": "frame_000006",
+      "file_name": "frame_000006.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000006.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000006.jpg",
+      "blur_variance": 1537.48,
+      "blur_score": 1.0,
+      "exposure_score": 0.9543,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0249,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.613999,
+        "longitude": 77.2090223,
+        "altitude_m": 45.13,
+        "speed_mps": 5.08
+      }
+    },
+    {
+      "frame_id": "frame_000007",
+      "file_name": "frame_000007.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000007.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000007.jpg",
+      "blur_variance": 1422.04,
+      "blur_score": 1.0,
+      "exposure_score": 0.9549,
+      "shadow_fraction": 0.0052,
+      "highlight_fraction": 0.0248,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9842,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140073,
+        "longitude": 77.2090225,
+        "altitude_m": 45.15,
+        "speed_mps": 5.09
+      }
+    },
+    {
+      "frame_id": "frame_000008",
+      "file_name": "frame_000008.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000008.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000008.jpg",
+      "blur_variance": 1483.87,
+      "blur_score": 1.0,
+      "exposure_score": 0.9545,
+      "shadow_fraction": 0.0055,
+      "highlight_fraction": 0.0248,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9841,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614017,
+        "longitude": 77.2090227,
+        "altitude_m": 45.17,
+        "speed_mps": 5.1
+      }
+    },
+    {
+      "frame_id": "frame_000009",
+      "file_name": "frame_000009.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000009.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000009.jpg",
+      "blur_variance": 1350.43,
+      "blur_score": 1.0,
+      "exposure_score": 0.9551,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0249,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9843,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614026,
+        "longitude": 77.2090229,
+        "altitude_m": 45.19,
+        "speed_mps": 5.12
+      }
+    },
+    {
+      "frame_id": "frame_000010",
+      "file_name": "frame_000010.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000010.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000010.jpg",
+      "blur_variance": 1280.31,
+      "blur_score": 1.0,
+      "exposure_score": 0.9558,
+      "shadow_fraction": 0.0046,
+      "highlight_fraction": 0.0249,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9845,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140342,
+        "longitude": 77.2090231,
+        "altitude_m": 45.21,
+        "speed_mps": 5.13
+      }
+    },
+    {
+      "frame_id": "frame_000011",
+      "file_name": "frame_000011.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000011.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000011.jpg",
+      "blur_variance": 1408.75,
+      "blur_score": 1.0,
+      "exposure_score": 0.9552,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.0247,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9843,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614044,
+        "longitude": 77.2090233,
+        "altitude_m": 45.23,
+        "speed_mps": 5.14
+      }
+    },
+    {
+      "frame_id": "frame_000012",
+      "file_name": "frame_000012.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000012.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000012.jpg",
+      "blur_variance": 1436.01,
+      "blur_score": 1.0,
+      "exposure_score": 0.955,
+      "shadow_fraction": 0.0054,
+      "highlight_fraction": 0.0246,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9842,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614053,
+        "longitude": 77.2090235,
+        "altitude_m": 45.25,
+        "speed_mps": 5.15
+      }
+    },
+    {
+      "frame_id": "frame_000013",
+      "file_name": "frame_000013.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000013.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000013.jpg",
+      "blur_variance": 1354.92,
+      "blur_score": 1.0,
+      "exposure_score": 0.9553,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0248,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9843,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140612,
+        "longitude": 77.2090237,
+        "altitude_m": 45.27,
+        "speed_mps": 5.16
+      }
+    },
+    {
+      "frame_id": "frame_000014",
+      "file_name": "frame_000014.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000014.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000014.jpg",
+      "blur_variance": 1401.94,
+      "blur_score": 1.0,
+      "exposure_score": 0.9544,
+      "shadow_fraction": 0.0052,
+      "highlight_fraction": 0.0252,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140702,
+        "longitude": 77.2090239,
+        "altitude_m": 45.29,
+        "speed_mps": 5.17
+      }
+    },
+    {
+      "frame_id": "frame_000015",
+      "file_name": "frame_000015.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000015.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000015.jpg",
+      "blur_variance": 1256.65,
+      "blur_score": 1.0,
+      "exposure_score": 0.9553,
+      "shadow_fraction": 0.0045,
+      "highlight_fraction": 0.0253,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9843,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140792,
+        "longitude": 77.2090241,
+        "altitude_m": 45.31,
+        "speed_mps": 5.18
+      }
+    },
+    {
+      "frame_id": "frame_000016",
+      "file_name": "frame_000016.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000016.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000016.jpg",
+      "blur_variance": 1352.08,
+      "blur_score": 1.0,
+      "exposure_score": 0.9545,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0253,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9841,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140882,
+        "longitude": 77.2090243,
+        "altitude_m": 45.33,
+        "speed_mps": 5.19
+      }
+    },
+    {
+      "frame_id": "frame_000017",
+      "file_name": "frame_000017.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000017.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000017.jpg",
+      "blur_variance": 1391.99,
+      "blur_score": 1.0,
+      "exposure_score": 0.9543,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.0254,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6140973,
+        "longitude": 77.2090245,
+        "altitude_m": 45.35,
+        "speed_mps": 5.2
+      }
+    },
+    {
+      "frame_id": "frame_000018",
+      "file_name": "frame_000018.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000018.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000018.jpg",
+      "blur_variance": 1501.89,
+      "blur_score": 1.0,
+      "exposure_score": 0.9538,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0252,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9838,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141062,
+        "longitude": 77.2090246,
+        "altitude_m": 45.37,
+        "speed_mps": 5.21
+      }
+    },
+    {
+      "frame_id": "frame_000019",
+      "file_name": "frame_000019.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000019.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000019.jpg",
+      "blur_variance": 1411.78,
+      "blur_score": 1.0,
+      "exposure_score": 0.9543,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.0253,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614116,
+        "longitude": 77.2090248,
+        "altitude_m": 45.39,
+        "speed_mps": 5.22
+      }
+    },
+    {
+      "frame_id": "frame_000020",
+      "file_name": "frame_000020.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000020.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000020.jpg",
+      "blur_variance": 1436.34,
+      "blur_score": 1.0,
+      "exposure_score": 0.9543,
+      "shadow_fraction": 0.0054,
+      "highlight_fraction": 0.0251,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.614125,
+        "longitude": 77.209025,
+        "altitude_m": 45.41,
+        "speed_mps": 5.22
+      }
+    },
+    {
+      "frame_id": "frame_000021",
+      "file_name": "frame_000021.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000021.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000021.jpg",
+      "blur_variance": 1394.71,
+      "blur_score": 1.0,
+      "exposure_score": 0.9542,
+      "shadow_fraction": 0.0052,
+      "highlight_fraction": 0.0254,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141347,
+        "longitude": 77.2090252,
+        "altitude_m": 45.43,
+        "speed_mps": 5.23
+      }
+    },
+    {
+      "frame_id": "frame_000022",
+      "file_name": "frame_000022.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000022.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000022.jpg",
+      "blur_variance": 1420.48,
+      "blur_score": 1.0,
+      "exposure_score": 0.9539,
+      "shadow_fraction": 0.0055,
+      "highlight_fraction": 0.0252,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9839,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141437,
+        "longitude": 77.2090254,
+        "altitude_m": 45.45,
+        "speed_mps": 5.24
+      }
+    },
+    {
+      "frame_id": "frame_000023",
+      "file_name": "frame_000023.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000023.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000023.jpg",
+      "blur_variance": 1832.93,
+      "blur_score": 1.0,
+      "exposure_score": 0.9516,
+      "shadow_fraction": 0.0066,
+      "highlight_fraction": 0.0257,
+      "contrast_score": 1.0,
+      "composite_weight": 0.983,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141542,
+        "longitude": 77.2090256,
+        "altitude_m": 45.47,
+        "speed_mps": 5.24
+      }
+    },
+    {
+      "frame_id": "frame_000024",
+      "file_name": "frame_000024.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000024.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000024.jpg",
+      "blur_variance": 1781.86,
+      "blur_score": 1.0,
+      "exposure_score": 0.9515,
+      "shadow_fraction": 0.0066,
+      "highlight_fraction": 0.0257,
+      "contrast_score": 1.0,
+      "composite_weight": 0.983,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141639,
+        "longitude": 77.2090258,
+        "altitude_m": 45.49,
+        "speed_mps": 5.25
+      }
+    },
+    {
+      "frame_id": "frame_000025",
+      "file_name": "frame_000025.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000025.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000025.jpg",
+      "blur_variance": 2147.5,
+      "blur_score": 1.0,
+      "exposure_score": 0.949,
+      "shadow_fraction": 0.0077,
+      "highlight_fraction": 0.0263,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9822,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141729,
+        "longitude": 77.209026,
+        "altitude_m": 45.51,
+        "speed_mps": 5.26
+      }
+    },
+    {
+      "frame_id": "frame_000026",
+      "file_name": "frame_000026.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000026.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000026.jpg",
+      "blur_variance": 1349.05,
+      "blur_score": 1.0,
+      "exposure_score": 0.9543,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0255,
+      "contrast_score": 1.0,
+      "composite_weight": 0.984,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141827,
+        "longitude": 77.2090261,
+        "altitude_m": 45.53,
+        "speed_mps": 5.26
+      }
+    },
+    {
+      "frame_id": "frame_000027",
+      "file_name": "frame_000027.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000027.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000027.jpg",
+      "blur_variance": 1507.88,
+      "blur_score": 1.0,
+      "exposure_score": 0.9528,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0257,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9835,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6141924,
+        "longitude": 77.2090263,
+        "altitude_m": 45.55,
+        "speed_mps": 5.27
+      }
+    },
+    {
+      "frame_id": "frame_000028",
+      "file_name": "frame_000028.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000028.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000028.jpg",
+      "blur_variance": 1408.82,
+      "blur_score": 1.0,
+      "exposure_score": 0.9533,
+      "shadow_fraction": 0.0057,
+      "highlight_fraction": 0.0255,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9836,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142014,
+        "longitude": 77.2090265,
+        "altitude_m": 45.57,
+        "speed_mps": 5.28
+      }
+    },
+    {
+      "frame_id": "frame_000029",
+      "file_name": "frame_000029.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000029.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000029.jpg",
+      "blur_variance": 1722.88,
+      "blur_score": 1.0,
+      "exposure_score": 0.9507,
+      "shadow_fraction": 0.0068,
+      "highlight_fraction": 0.0261,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9827,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142104,
+        "longitude": 77.2090266,
+        "altitude_m": 45.59,
+        "speed_mps": 5.28
+      }
+    },
+    {
+      "frame_id": "frame_000030",
+      "file_name": "frame_000030.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000030.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000030.jpg",
+      "blur_variance": 1621.02,
+      "blur_score": 1.0,
+      "exposure_score": 0.9514,
+      "shadow_fraction": 0.0061,
+      "highlight_fraction": 0.0263,
+      "contrast_score": 1.0,
+      "composite_weight": 0.983,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142202,
+        "longitude": 77.2090268,
+        "altitude_m": 45.62,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000031",
+      "file_name": "frame_000031.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000031.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000031.jpg",
+      "blur_variance": 1736.57,
+      "blur_score": 1.0,
+      "exposure_score": 0.9505,
+      "shadow_fraction": 0.0069,
+      "highlight_fraction": 0.0261,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9827,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142299,
+        "longitude": 77.209027,
+        "altitude_m": 45.64,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000032",
+      "file_name": "frame_000032.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000032.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000032.jpg",
+      "blur_variance": 1443.85,
+      "blur_score": 1.0,
+      "exposure_score": 0.952,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0262,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9832,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142397,
+        "longitude": 77.2090271,
+        "altitude_m": 45.66,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000033",
+      "file_name": "frame_000033.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000033.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000033.jpg",
+      "blur_variance": 1571.8,
+      "blur_score": 1.0,
+      "exposure_score": 0.9513,
+      "shadow_fraction": 0.0063,
+      "highlight_fraction": 0.0262,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9829,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142494,
+        "longitude": 77.2090273,
+        "altitude_m": 45.68,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000034",
+      "file_name": "frame_000034.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000034.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000034.jpg",
+      "blur_variance": 1454.22,
+      "blur_score": 1.0,
+      "exposure_score": 0.9522,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0263,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9833,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142584,
+        "longitude": 77.2090275,
+        "altitude_m": 45.7,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000035",
+      "file_name": "frame_000035.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000035.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000035.jpg",
+      "blur_variance": 1530.52,
+      "blur_score": 1.0,
+      "exposure_score": 0.9515,
+      "shadow_fraction": 0.0059,
+      "highlight_fraction": 0.0264,
+      "contrast_score": 1.0,
+      "composite_weight": 0.983,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142674,
+        "longitude": 77.2090276,
+        "altitude_m": 45.72,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000036",
+      "file_name": "frame_000036.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000036.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000036.jpg",
+      "blur_variance": 1445.74,
+      "blur_score": 1.0,
+      "exposure_score": 0.9515,
+      "shadow_fraction": 0.0055,
+      "highlight_fraction": 0.0268,
+      "contrast_score": 0.9981,
+      "composite_weight": 0.9827,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142772,
+        "longitude": 77.2090278,
+        "altitude_m": 45.74,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000037",
+      "file_name": "frame_000037.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000037.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000037.jpg",
+      "blur_variance": 1512.81,
+      "blur_score": 1.0,
+      "exposure_score": 0.952,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0262,
+      "contrast_score": 1.0,
+      "composite_weight": 0.9832,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142869,
+        "longitude": 77.209028,
+        "altitude_m": 45.76,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000038",
+      "file_name": "frame_000038.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000038.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000038.jpg",
+      "blur_variance": 1481.12,
+      "blur_score": 1.0,
+      "exposure_score": 0.9516,
+      "shadow_fraction": 0.0057,
+      "highlight_fraction": 0.0266,
+      "contrast_score": 0.9982,
+      "composite_weight": 0.9828,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6142959,
+        "longitude": 77.2090281,
+        "altitude_m": 45.77,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000039",
+      "file_name": "frame_000039.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000039.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000039.jpg",
+      "blur_variance": 1502.32,
+      "blur_score": 1.0,
+      "exposure_score": 0.9523,
+      "shadow_fraction": 0.0057,
+      "highlight_fraction": 0.0261,
+      "contrast_score": 0.9977,
+      "composite_weight": 0.983,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143049,
+        "longitude": 77.2090283,
+        "altitude_m": 45.79,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000040",
+      "file_name": "frame_000040.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000040.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000040.jpg",
+      "blur_variance": 1491.0,
+      "blur_score": 1.0,
+      "exposure_score": 0.9514,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0266,
+      "contrast_score": 0.9967,
+      "composite_weight": 0.9825,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143139,
+        "longitude": 77.2090284,
+        "altitude_m": 45.81,
+        "speed_mps": 5.3
+      }
+    },
+    {
+      "frame_id": "frame_000041",
+      "file_name": "frame_000041.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000041.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000041.jpg",
+      "blur_variance": 1446.05,
+      "blur_score": 1.0,
+      "exposure_score": 0.9518,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0266,
+      "contrast_score": 0.9951,
+      "composite_weight": 0.9824,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143229,
+        "longitude": 77.2090285,
+        "altitude_m": 45.83,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000042",
+      "file_name": "frame_000042.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000042.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000042.jpg",
+      "blur_variance": 1404.25,
+      "blur_score": 1.0,
+      "exposure_score": 0.9523,
+      "shadow_fraction": 0.0053,
+      "highlight_fraction": 0.0265,
+      "contrast_score": 0.992,
+      "composite_weight": 0.9821,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143319,
+        "longitude": 77.2090286,
+        "altitude_m": 45.85,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000043",
+      "file_name": "frame_000043.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000043.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000043.jpg",
+      "blur_variance": 1374.06,
+      "blur_score": 1.0,
+      "exposure_score": 0.9514,
+      "shadow_fraction": 0.0052,
+      "highlight_fraction": 0.0272,
+      "contrast_score": 0.9925,
+      "composite_weight": 0.9819,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143409,
+        "longitude": 77.2090288,
+        "altitude_m": 45.86,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000044",
+      "file_name": "frame_000044.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000044.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000044.jpg",
+      "blur_variance": 1565.1,
+      "blur_score": 1.0,
+      "exposure_score": 0.9469,
+      "shadow_fraction": 0.0057,
+      "highlight_fraction": 0.0297,
+      "contrast_score": 0.9984,
+      "composite_weight": 0.9812,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143499,
+        "longitude": 77.2090289,
+        "altitude_m": 45.88,
+        "speed_mps": 5.29
+      }
+    },
+    {
+      "frame_id": "frame_000045",
+      "file_name": "frame_000045.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000045.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000045.jpg",
+      "blur_variance": 1388.75,
+      "blur_score": 1.0,
+      "exposure_score": 0.9417,
+      "shadow_fraction": 0.0047,
+      "highlight_fraction": 0.0342,
+      "contrast_score": 0.9928,
+      "composite_weight": 0.9785,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143589,
+        "longitude": 77.209029,
+        "altitude_m": 45.9,
+        "speed_mps": 5.28
+      }
+    },
+    {
+      "frame_id": "frame_000046",
+      "file_name": "frame_000046.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000046.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000046.jpg",
+      "blur_variance": 1499.47,
+      "blur_score": 1.0,
+      "exposure_score": 0.9394,
+      "shadow_fraction": 0.0053,
+      "highlight_fraction": 0.0351,
+      "contrast_score": 0.9942,
+      "composite_weight": 0.9779,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143687,
+        "longitude": 77.2090291,
+        "altitude_m": 45.92,
+        "speed_mps": 5.28
+      }
+    },
+    {
+      "frame_id": "frame_000047",
+      "file_name": "frame_000047.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000047.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000047.jpg",
+      "blur_variance": 1544.84,
+      "blur_score": 1.0,
+      "exposure_score": 0.9386,
+      "shadow_fraction": 0.0054,
+      "highlight_fraction": 0.0355,
+      "contrast_score": 0.9962,
+      "composite_weight": 0.978,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143784,
+        "longitude": 77.2090293,
+        "altitude_m": 45.94,
+        "speed_mps": 5.27
+      }
+    },
+    {
+      "frame_id": "frame_000048",
+      "file_name": "frame_000048.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000048.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000048.jpg",
+      "blur_variance": 1461.59,
+      "blur_score": 1.0,
+      "exposure_score": 0.9391,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0356,
+      "contrast_score": 0.9927,
+      "composite_weight": 0.9776,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143874,
+        "longitude": 77.2090294,
+        "altitude_m": 45.96,
+        "speed_mps": 5.27
+      }
+    },
+    {
+      "frame_id": "frame_000049",
+      "file_name": "frame_000049.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000049.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000049.jpg",
+      "blur_variance": 1568.12,
+      "blur_score": 1.0,
+      "exposure_score": 0.9385,
+      "shadow_fraction": 0.0054,
+      "highlight_fraction": 0.0356,
+      "contrast_score": 0.9952,
+      "composite_weight": 0.9778,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6143964,
+        "longitude": 77.2090295,
+        "altitude_m": 45.98,
+        "speed_mps": 5.26
+      }
+    },
+    {
+      "frame_id": "frame_000050",
+      "file_name": "frame_000050.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000050.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000050.jpg",
+      "blur_variance": 1472.17,
+      "blur_score": 1.0,
+      "exposure_score": 0.9386,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.0358,
+      "contrast_score": 0.9929,
+      "composite_weight": 0.9774,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144062,
+        "longitude": 77.2090296,
+        "altitude_m": 45.99,
+        "speed_mps": 5.26
+      }
+    },
+    {
+      "frame_id": "frame_000051",
+      "file_name": "frame_000051.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000051.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000051.jpg",
+      "blur_variance": 1483.31,
+      "blur_score": 1.0,
+      "exposure_score": 0.9392,
+      "shadow_fraction": 0.0051,
+      "highlight_fraction": 0.0354,
+      "contrast_score": 0.9917,
+      "composite_weight": 0.9775,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144159,
+        "longitude": 77.2090297,
+        "altitude_m": 46.01,
+        "speed_mps": 5.25
+      }
+    },
+    {
+      "frame_id": "frame_000052",
+      "file_name": "frame_000052.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000052.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000052.jpg",
+      "blur_variance": 1675.53,
+      "blur_score": 1.0,
+      "exposure_score": 0.9383,
+      "shadow_fraction": 0.0057,
+      "highlight_fraction": 0.0354,
+      "contrast_score": 0.9947,
+      "composite_weight": 0.9776,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144257,
+        "longitude": 77.2090298,
+        "altitude_m": 46.03,
+        "speed_mps": 5.25
+      }
+    },
+    {
+      "frame_id": "frame_000053",
+      "file_name": "frame_000053.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000053.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000053.jpg",
+      "blur_variance": 1653.39,
+      "blur_score": 1.0,
+      "exposure_score": 0.938,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0355,
+      "contrast_score": 0.9933,
+      "composite_weight": 0.9773,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144362,
+        "longitude": 77.2090299,
+        "altitude_m": 46.05,
+        "speed_mps": 5.24
+      }
+    },
+    {
+      "frame_id": "frame_000054",
+      "file_name": "frame_000054.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000054.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000054.jpg",
+      "blur_variance": 1615.27,
+      "blur_score": 1.0,
+      "exposure_score": 0.9376,
+      "shadow_fraction": 0.0063,
+      "highlight_fraction": 0.0354,
+      "contrast_score": 0.9936,
+      "composite_weight": 0.9772,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144467,
+        "longitude": 77.20903,
+        "altitude_m": 46.07,
+        "speed_mps": 5.23
+      }
+    },
+    {
+      "frame_id": "frame_000055",
+      "file_name": "frame_000055.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000055.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000055.jpg",
+      "blur_variance": 1438.38,
+      "blur_score": 1.0,
+      "exposure_score": 0.9397,
+      "shadow_fraction": 0.0052,
+      "highlight_fraction": 0.035,
+      "contrast_score": 0.9878,
+      "composite_weight": 0.9771,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144572,
+        "longitude": 77.2090301,
+        "altitude_m": 46.09,
+        "speed_mps": 5.22
+      }
+    },
+    {
+      "frame_id": "frame_000056",
+      "file_name": "frame_000056.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000056.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000056.jpg",
+      "blur_variance": 1559.6,
+      "blur_score": 1.0,
+      "exposure_score": 0.9393,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0348,
+      "contrast_score": 0.9901,
+      "composite_weight": 0.9773,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144669,
+        "longitude": 77.2090302,
+        "altitude_m": 46.11,
+        "speed_mps": 5.21
+      }
+    },
+    {
+      "frame_id": "frame_000057",
+      "file_name": "frame_000057.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000057.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000057.jpg",
+      "blur_variance": 1461.68,
+      "blur_score": 1.0,
+      "exposure_score": 0.94,
+      "shadow_fraction": 0.0053,
+      "highlight_fraction": 0.0347,
+      "contrast_score": 0.9864,
+      "composite_weight": 0.977,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144759,
+        "longitude": 77.2090303,
+        "altitude_m": 46.12,
+        "speed_mps": 5.2
+      }
+    },
+    {
+      "frame_id": "frame_000058",
+      "file_name": "frame_000058.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000058.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000058.jpg",
+      "blur_variance": 1651.75,
+      "blur_score": 1.0,
+      "exposure_score": 0.9378,
+      "shadow_fraction": 0.006,
+      "highlight_fraction": 0.0355,
+      "contrast_score": 0.9903,
+      "composite_weight": 0.9768,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144849,
+        "longitude": 77.2090303,
+        "altitude_m": 46.14,
+        "speed_mps": 5.19
+      }
+    },
+    {
+      "frame_id": "frame_000059",
+      "file_name": "frame_000059.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000059.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000059.jpg",
+      "blur_variance": 1520.83,
+      "blur_score": 1.0,
+      "exposure_score": 0.9392,
+      "shadow_fraction": 0.0053,
+      "highlight_fraction": 0.0352,
+      "contrast_score": 0.9849,
+      "composite_weight": 0.9765,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6144947,
+        "longitude": 77.2090304,
+        "altitude_m": 46.16,
+        "speed_mps": 5.18
+      }
+    },
+    {
+      "frame_id": "frame_000060",
+      "file_name": "frame_000060.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000060.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000060.jpg",
+      "blur_variance": 1519.33,
+      "blur_score": 1.0,
+      "exposure_score": 0.9394,
+      "shadow_fraction": 0.0055,
+      "highlight_fraction": 0.035,
+      "contrast_score": 0.9852,
+      "composite_weight": 0.9766,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145044,
+        "longitude": 77.2090305,
+        "altitude_m": 46.18,
+        "speed_mps": 5.17
+      }
+    },
+    {
+      "frame_id": "frame_000061",
+      "file_name": "frame_000061.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000061.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000061.jpg",
+      "blur_variance": 1471.5,
+      "blur_score": 1.0,
+      "exposure_score": 0.939,
+      "shadow_fraction": 0.0053,
+      "highlight_fraction": 0.0354,
+      "contrast_score": 0.9831,
+      "composite_weight": 0.9761,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145134,
+        "longitude": 77.2090305,
+        "altitude_m": 46.19,
+        "speed_mps": 5.16
+      }
+    },
+    {
+      "frame_id": "frame_000062",
+      "file_name": "frame_000062.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000062.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000062.jpg",
+      "blur_variance": 1493.03,
+      "blur_score": 1.0,
+      "exposure_score": 0.9405,
+      "shadow_fraction": 0.005,
+      "highlight_fraction": 0.0346,
+      "contrast_score": 0.9814,
+      "composite_weight": 0.9764,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145231,
+        "longitude": 77.2090306,
+        "altitude_m": 46.21,
+        "speed_mps": 5.15
+      }
+    },
+    {
+      "frame_id": "frame_000063",
+      "file_name": "frame_000063.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000063.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000063.jpg",
+      "blur_variance": 1646.05,
+      "blur_score": 1.0,
+      "exposure_score": 0.9397,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.0346,
+      "contrast_score": 0.9845,
+      "composite_weight": 0.9766,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145336,
+        "longitude": 77.2090307,
+        "altitude_m": 46.23,
+        "speed_mps": 5.14
+      }
+    },
+    {
+      "frame_id": "frame_000064",
+      "file_name": "frame_000064.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000064.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000064.jpg",
+      "blur_variance": 1651.3,
+      "blur_score": 1.0,
+      "exposure_score": 0.9383,
+      "shadow_fraction": 0.006,
+      "highlight_fraction": 0.0351,
+      "contrast_score": 0.984,
+      "composite_weight": 0.976,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145441,
+        "longitude": 77.2090307,
+        "altitude_m": 46.25,
+        "speed_mps": 5.13
+      }
+    },
+    {
+      "frame_id": "frame_000065",
+      "file_name": "frame_000065.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000065.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000065.jpg",
+      "blur_variance": 1586.73,
+      "blur_score": 1.0,
+      "exposure_score": 0.9393,
+      "shadow_fraction": 0.0058,
+      "highlight_fraction": 0.0347,
+      "contrast_score": 0.9818,
+      "composite_weight": 0.976,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145546,
+        "longitude": 77.2090308,
+        "altitude_m": 46.26,
+        "speed_mps": 5.12
+      }
+    },
+    {
+      "frame_id": "frame_000066",
+      "file_name": "frame_000066.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000066.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000066.jpg",
+      "blur_variance": 1583.84,
+      "blur_score": 1.0,
+      "exposure_score": 0.9391,
+      "shadow_fraction": 0.0056,
+      "highlight_fraction": 0.035,
+      "contrast_score": 0.9795,
+      "composite_weight": 0.9756,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145658,
+        "longitude": 77.2090309,
+        "altitude_m": 46.28,
+        "speed_mps": 5.1
+      }
+    },
+    {
+      "frame_id": "frame_000067",
+      "file_name": "frame_000067.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000067.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000067.jpg",
+      "blur_variance": 1668.62,
+      "blur_score": 1.0,
+      "exposure_score": 0.9389,
+      "shadow_fraction": 0.0061,
+      "highlight_fraction": 0.0346,
+      "contrast_score": 0.9796,
+      "composite_weight": 0.9756,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145756,
+        "longitude": 77.2090309,
+        "altitude_m": 46.3,
+        "speed_mps": 5.09
+      }
+    },
+    {
+      "frame_id": "frame_000068",
+      "file_name": "frame_000068.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000068.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000068.jpg",
+      "blur_variance": 1841.13,
+      "blur_score": 1.0,
+      "exposure_score": 0.9368,
+      "shadow_fraction": 0.0069,
+      "highlight_fraction": 0.0352,
+      "contrast_score": 0.9838,
+      "composite_weight": 0.9755,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145868,
+        "longitude": 77.2090309,
+        "altitude_m": 46.32,
+        "speed_mps": 5.08
+      }
+    },
+    {
+      "frame_id": "frame_000069",
+      "file_name": "frame_000069.jpg",
+      "original_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage2_extracted_frames\\frame_000069.jpg",
+      "kept_path": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage3_quality_frames\\frame_000069.jpg",
+      "blur_variance": 1770.51,
+      "blur_score": 1.0,
+      "exposure_score": 0.9374,
+      "shadow_fraction": 0.0063,
+      "highlight_fraction": 0.0354,
+      "contrast_score": 0.9794,
+      "composite_weight": 0.975,
+      "status": "KEPT",
+      "gps": {
+        "latitude": 28.6145973,
+        "longitude": 77.209031,
+        "altitude_m": 46.33,
+        "speed_mps": 5.06
+      }
+    }
+  ]
+}

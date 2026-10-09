@@ -1,0 +1,143 @@
+{
+  "project": "AstraMesh3D (SIH26158)",
+  "pipeline_stage": 12,
+  "pipeline_status": "COMPLETE",
+  "package_timestamp": "2026-09-05T02:53:43Z",
+  "crs": {
+    "projected_epsg": 32643,
+    "projected_name": "UTM Zone 43N",
+    "geographic_epsg": 4326,
+    "geographic_name": "WGS84"
+  },
+  "summary_metrics": {
+    "video_frames_scanned": null,
+    "keyframes_extracted": 70,
+    "keyframes_registered": 70,
+    "registration_success_rate_pct": 100.0,
+    "mean_reprojection_error_px": 0.6194,
+    "dynamic_objects_masked": 417,
+    "sim3_scale_factor_m_per_unit": 5.938539,
+    "trajectory_alignment_rmse_m": 1.1569,
+    "final_clean_3d_points": 34143,
+    "mesh_triangles": 171325,
+    "reconstructed_surface_area_m2": 2670.98,
+    "dsm_raster_resolution_m": 0.25
+  },
+  "total_deliverable_files": 16,
+  "total_package_bytes": 32496862,
+  "total_package_mb": 30.99,
+  "deliverables": [
+    {
+      "relative_path": "gis_rasters/dsm_elevation.prj",
+      "file_name": "dsm_elevation.prj",
+      "size_bytes": 1529,
+      "size_mb": 0.001,
+      "sha256": "f40d6305dbb7d0b9e1f8b0c8fae7c237350317d6728652ed7ec6e64c44906f92"
+    },
+    {
+      "relative_path": "gis_rasters/dsm_elevation.tfw",
+      "file_name": "dsm_elevation.tfw",
+      "size_bytes": 72,
+      "size_mb": 0.0,
+      "sha256": "8e71d91dd1ea6d2103ed8824377d98dc01731269ebade9c6b4425cbe28fc4e1b"
+    },
+    {
+      "relative_path": "gis_rasters/dsm_elevation.tif",
+      "file_name": "dsm_elevation.tif",
+      "size_bytes": 164864,
+      "size_mb": 0.157,
+      "sha256": "f17c93a45eb2de253201a40449fc00efd6dd304cc37ecbbb0e55acf08e697c90"
+    },
+    {
+      "relative_path": "gis_rasters/survey_boundary.geojson",
+      "file_name": "survey_boundary.geojson",
+      "size_bytes": 2992,
+      "size_mb": 0.003,
+      "sha256": "c9dca418e0eb5d8e984d94f4b9cc1d585684e93fcfcca9407ccc594ce2c27608"
+    },
+    {
+      "relative_path": "models_3d/pointcloud_confidence_tagged.ply",
+      "file_name": "pointcloud_confidence_tagged.ply",
+      "size_bytes": 1741558,
+      "size_mb": 1.661,
+      "sha256": "77489ce4219c64451f5b4b05f5bfe65c1eccb40ccb065e3e487ea1414a1d4a46"
+    },
+    {
+      "relative_path": "models_3d/pointcloud_metric_clean.ply",
+      "file_name": "pointcloud_metric_clean.ply",
+      "size_bytes": 1741558,
+      "size_mb": 1.661,
+      "sha256": "13db9bfcd0c704b872d9c06ff9f4cd2e9b19d0719365e58709d7d05dc5713780"
+    },
+    {
+      "relative_path": "models_3d/scene_mesh.glb",
+      "file_name": "scene_mesh.glb",
+      "size_bytes": 6893308,
+      "size_mb": 6.574,
+      "sha256": "95c1447be1e0baee806b46821f2486156688aab4994694beb943cb796828fa12"
+    },
+    {
+      "relative_path": "models_3d/scene_mesh.obj",
+      "file_name": "scene_mesh.obj",
+      "size_bytes": 14182025,
+      "size_mb": 13.525,
+      "sha256": "4a4e40132300a7f285eb27886bc333005714c2d9c90d014b2ec21ec9335a0623"
+    },
+    {
+      "relative_path": "models_3d/scene_mesh.ply",
+      "file_name": "scene_mesh.ply",
+      "size_bytes": 6637877,
+      "size_mb": 6.33,
+      "sha256": "f839f17adb02f79308b26129d3363c8898ee2a36db633ca63bc364ba60e1bfba"
+    },
+    {
+      "relative_path": "reports/executive_summary.md",
+      "file_name": "executive_summary.md",
+      "size_bytes": 2216,
+      "size_mb": 0.002,
+      "sha256": "f75bfa871fd18558f1832b57d8dfae8354223854b6956e89f5b139af3e36db42"
+    },
+    {
+      "relative_path": "reports/qa_report.json",
+      "file_name": "qa_report.json",
+      "size_bytes": 3917,
+      "size_mb": 0.004,
+      "sha256": "0282839bed99af39dabc99c03457dbbbe745452c3c83a3f177409ecd9d23a79a"
+    },
+    {
+      "relative_path": "visual_diagnostics/depth_heatmap_sample.jpg",
+      "file_name": "depth_heatmap_sample.jpg",
+      "size_bytes": 114479,
+      "size_mb": 0.109,
+      "sha256": "ca9a8cd2e8909f0c3b32a91515b9efd2639e877ecd7bdb4e34825bc4e9a3e0a5"
+    },
+    {
+      "relative_path": "visual_diagnostics/dsm_relief_preview.jpg",
+      "file_name": "dsm_relief_preview.jpg",
+      "size_bytes": 16093,
+      "size_mb": 0.015,
+      "sha256": "e84972aa460dbf7c41642be359369d22c0e95e3abc0ed9952bd92cf70ea07f84"
+    },
+    {
+      "relative_path": "visual_diagnostics/dynamic_mask_sample.jpg",
+      "file_name": "dynamic_mask_sample.jpg",
+      "size_bytes": 609652,
+      "size_mb": 0.581,
+      "sha256": "55a0fbf3eb5a4a93830376848b5757e1e37adddd3a51adcce3eae859a6b3ad4e"
+    },
+    {
+      "relative_path": "visual_diagnostics/trajectory_alignment.png",
+      "file_name": "trajectory_alignment.png",
+      "size_bytes": 118357,
+      "size_mb": 0.113,
+      "sha256": "4381d7947215671109446f569b9cb4f2a211af7ef8c2561ee0b1db5f6fb59629"
+    },
+    {
+      "relative_path": "visual_diagnostics/uncertainty_analysis.png",
+      "file_name": "uncertainty_analysis.png",
+      "size_bytes": 266365,
+      "size_mb": 0.254,
+      "sha256": "8707c8c50adfa61c0e3efbf975b5a22b1e52ce9a873aba79cde3bc38b0b1f173"
+    }
+  ]
+}

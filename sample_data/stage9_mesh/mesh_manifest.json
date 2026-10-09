@@ -1,0 +1,36 @@
+{
+  "scale_mode": "METRIC_GEOREFERENCED_SCALE",
+  "is_metric": true,
+  "reconstruction_method": "Screened Poisson Surface Reconstruction",
+  "poisson_octree_depth": 9,
+  "trim_quantile": 0.05,
+  "density_threshold": 6.1037,
+  "input_points": 34143,
+  "raw_poisson_vertices": 91031,
+  "raw_poisson_triangles": 182042,
+  "trimmed_vertices_removed": 4552,
+  "final_vertices": 86477,
+  "final_triangles": 171325,
+  "surface_area_m2": 2670.98,
+  "metric_spatial_bounds_enu_m": {
+    "min": [
+      3.472,
+      -5.085,
+      -7.136
+    ],
+    "max": [
+      36.185,
+      76.28,
+      -0.261
+    ],
+    "span": [
+      32.714,
+      81.365,
+      6.876
+    ]
+  },
+  "output_files": {
+    "mesh_ply": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage9_mesh\\surface_mesh.ply",
+    "mesh_obj": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage9_mesh\\surface_mesh.obj"
+  }
+}

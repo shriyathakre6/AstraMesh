@@ -1,0 +1,112 @@
+{
+  "depth_model": "Depth-Anything-V2-Small (ONNX)",
+  "execution_provider": "CPUExecutionProvider",
+  "scale_mode": "RELATIVE_SCALE_AMBIGUOUS",
+  "is_metric": false,
+  "scale_ambiguity_note": "Monocular depth output is scale-ambiguous relative disparity. Physical metric scaling will be resolved during Stage 7 (Sensor Fusion) using GPS constraints.",
+  "total_frames_processed": 12,
+  "sample_stride_pixels": 16,
+  "total_backprojected_points": 68753,
+  "output_files": {
+    "dense_points_ply": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage5_depth\\ai_dense_points.ply",
+    "visualizations_dir": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage5_depth\\depth_visualizations"
+  },
+  "frames": [
+    {
+      "frame_name": "frame_000000.jpg",
+      "min_disparity": -0.0022,
+      "max_disparity": 6.9918,
+      "mean_disparity": 2.2428,
+      "points_generated": 5837,
+      "depth_viz_file": "depth_viz_frame_000000.jpg"
+    },
+    {
+      "frame_name": "frame_000005.jpg",
+      "min_disparity": -0.0024,
+      "max_disparity": 7.0798,
+      "mean_disparity": 2.2818,
+      "points_generated": 5837,
+      "depth_viz_file": "depth_viz_frame_000005.jpg"
+    },
+    {
+      "frame_name": "frame_000011.jpg",
+      "min_disparity": -0.0023,
+      "max_disparity": 6.9212,
+      "mean_disparity": 2.202,
+      "points_generated": 5804,
+      "depth_viz_file": "depth_viz_frame_000011.jpg"
+    },
+    {
+      "frame_name": "frame_000017.jpg",
+      "min_disparity": -0.0024,
+      "max_disparity": 6.8579,
+      "mean_disparity": 2.206,
+      "points_generated": 5844,
+      "depth_viz_file": "depth_viz_frame_000017.jpg"
+    },
+    {
+      "frame_name": "frame_000023.jpg",
+      "min_disparity": -0.0022,
+      "max_disparity": 7.0801,
+      "mean_disparity": 2.2629,
+      "points_generated": 5877,
+      "depth_viz_file": "depth_viz_frame_000023.jpg"
+    },
+    {
+      "frame_name": "frame_000029.jpg",
+      "min_disparity": -0.0022,
+      "max_disparity": 6.9786,
+      "mean_disparity": 2.2128,
+      "points_generated": 5891,
+      "depth_viz_file": "depth_viz_frame_000029.jpg"
+    },
+    {
+      "frame_name": "frame_000035.jpg",
+      "min_disparity": -0.0033,
+      "max_disparity": 7.236,
+      "mean_disparity": 2.3183,
+      "points_generated": 5951,
+      "depth_viz_file": "depth_viz_frame_000035.jpg"
+    },
+    {
+      "frame_name": "frame_000040.jpg",
+      "min_disparity": -0.0021,
+      "max_disparity": 6.9434,
+      "mean_disparity": 2.3095,
+      "points_generated": 5950,
+      "depth_viz_file": "depth_viz_frame_000040.jpg"
+    },
+    {
+      "frame_name": "frame_000046.jpg",
+      "min_disparity": -0.0017,
+      "max_disparity": 6.9298,
+      "mean_disparity": 2.3228,
+      "points_generated": 5985,
+      "depth_viz_file": "depth_viz_frame_000046.jpg"
+    },
+    {
+      "frame_name": "frame_000052.jpg",
+      "min_disparity": -0.0024,
+      "max_disparity": 6.8338,
+      "mean_disparity": 2.3228,
+      "points_generated": 6011,
+      "depth_viz_file": "depth_viz_frame_000052.jpg"
+    },
+    {
+      "frame_name": "frame_000058.jpg",
+      "min_disparity": -0.0026,
+      "max_disparity": 6.6899,
+      "mean_disparity": 2.2822,
+      "points_generated": 6003,
+      "depth_viz_file": "depth_viz_frame_000058.jpg"
+    },
+    {
+      "frame_name": "frame_000064.jpg",
+      "min_disparity": -0.0025,
+      "max_disparity": 6.5751,
+      "mean_disparity": 2.3619,
+      "points_generated": 6133,
+      "depth_viz_file": "depth_viz_frame_000064.jpg"
+    }
+  ]
+}

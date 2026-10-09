@@ -1,0 +1,108 @@
+{
+  "project": "AstraMesh3D (SIH26158)",
+  "pipeline_status": "COMPLETE_VERIFIED",
+  "execution_policy": "STRICT_ZERO_FABRICATION",
+  "audit_summary": {
+    "video_frames_scanned": null,
+    "keyframes_extracted": 70,
+    "keyframes_registered": 70,
+    "registration_success_rate_pct": 100.0,
+    "mean_reprojection_error_px": 0.6194,
+    "dynamic_objects_masked": 417,
+    "sim3_scale_factor_m_per_unit": 5.938539,
+    "trajectory_alignment_rmse_m": 1.1569,
+    "final_clean_3d_points": 34143,
+    "mesh_triangles": 171325,
+    "reconstructed_surface_area_m2": 2670.98,
+    "dsm_raster_resolution_m": 0.25
+  },
+  "spatial_uncertainty_layer": {
+    "mean_confidence_score": 0.6989,
+    "median_confidence_score": 0.7403,
+    "confidence_brackets_pct": {
+      "high_confidence": 48.0,
+      "moderate_confidence": 33.12,
+      "low_confidence": 18.88
+    }
+  },
+  "ground_truth_accuracy": {
+    "reference_provided": false,
+    "absolute_accuracy_status": "not available \u2014 no reference provided",
+    "note": "Per AstraMesh3D strict zero-fabrication standards, absolute external accuracy requires verified ground truth checkpoints (RTK GCPs) or terrestrial LiDAR scans. Because no reference was supplied, absolute error metrics are marked unavailable."
+  },
+  "stage_by_stage_audit": {
+    "stage_01_ingestion": {
+      "video_fps": null,
+      "total_video_frames": null,
+      "video_resolution": "NonexNone",
+      "gps_track_points": 0
+    },
+    "stage_02_extraction": {
+      "extracted_keyframes": 70,
+      "reduction_ratio": 12.69,
+      "mean_motion_delta": 12.72
+    },
+    "stage_03_quality": {
+      "evaluated_frames": 70,
+      "kept_frames": 70,
+      "mean_quality_score": 0.9811,
+      "mean_laplacian_variance": null
+    },
+    "stage_04_sfm": {
+      "registered_frames": 70,
+      "registration_rate_pct": 100.0,
+      "sparse_3d_points": 12118,
+      "mean_reprojection_error_px": 0.6194
+    },
+    "stage_05_depth": {
+      "depth_model": "Depth-Anything-V2-Small (ONNX)",
+      "scale_mode_stage5": "RELATIVE_SCALE_AMBIGUOUS",
+      "ai_dense_points_generated": 68753
+    },
+    "stage_06_masking": {
+      "dynamic_objects_detected": 417,
+      "detected_classes_histogram": {
+        "car": 412,
+        "truck": 2,
+        "bus": 1,
+        "train": 2
+      },
+      "mean_masked_area_pct": 1.9818,
+      "dilation_margin_px": 20
+    },
+    "stage_07_fusion": {
+      "scale_mode_status": "METRIC_GEOREFERENCED_SCALE",
+      "sim3_scale_factor_m_per_unit": 5.938539,
+      "trajectory_alignment_rmse_m": 1.1569,
+      "mean_trajectory_residual_m": 0.9821,
+      "max_trajectory_residual_m": 3.5541
+    },
+    "stage_08_cleanup": {
+      "input_points": 80871,
+      "sor_outliers_removed": 2206,
+      "ror_isolated_removed": 31589,
+      "final_clean_points": 34143,
+      "point_density_pts_per_m2": 13.98,
+      "noise_reduction_pct": 57.78
+    },
+    "stage_09_mesh": {
+      "surface_reconstruction_method": "Screened Poisson Surface Reconstruction",
+      "mesh_vertices": 86477,
+      "mesh_triangles": 171325,
+      "reconstructed_surface_area_m2": 2670.98
+    },
+    "stage_10_georeferencing": {
+      "projected_crs": "UTM Zone 43N",
+      "projected_epsg": 32643,
+      "geographic_crs": "WGS84",
+      "dsm_resolution_m": 0.25,
+      "dsm_grid_pixels": "127x324",
+      "elevation_range_m": "38.57m to 43.8m"
+    }
+  },
+  "output_files": {
+    "qa_report_json": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage11_qa\\qa_report.json",
+    "confidence_tagged_points_ply": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage11_qa\\confidence_tagged_points.ply",
+    "uncertainty_plot": "C:\\Users\\shriy\\.gemini\\antigravity\\scratch\\astramesh3d\\sample_data\\stage11_qa\\uncertainty_analysis.png"
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "session_id": "SESSION_1788537234_12306918-hd_1080_1920_60fps",
+  "video_path": "C:\\Users\\shriy\\Downloads\\12306918-hd_1080_1920_60fps.mp4",
+  "resolution_width": 1080,
+  "resolution_height": 1920,
+  "fps": 60.0,
+  "total_frames": 888,
+  "duration_sec": 14.8,
+  "fourcc": "h264",
+  "has_gps": true,
+  "gps_points": [
+    {
+      "timestamp_sec": 0.0,
+      "latitude": 28.613939,
+      "longitude": 77.209021,
+      "altitude_m": 45.0,
+      "speed_mps": 5.0,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 1.0,
+      "latitude": 28.613984,
+      "longitude": 77.209022,
+      "altitude_m": 45.1,
+      "speed_mps": 5.06,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 2.0,
+      "latitude": 28.614029,
+      "longitude": 77.209023,
+      "altitude_m": 45.2,
+      "speed_mps": 5.12,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 3.0,
+      "latitude": 28.614074,
+      "longitude": 77.209024,
+      "altitude_m": 45.3,
+      "speed_mps": 5.17,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 4.0,
+      "latitude": 28.614119,
+      "longitude": 77.2090249,
+      "altitude_m": 45.4,
+      "speed_mps": 5.22,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 5.0,
+      "latitude": 28.6141639,
+      "longitude": 77.2090258,
+      "altitude_m": 45.49,
+      "speed_mps": 5.25,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 6.0,
+      "latitude": 28.6142089,
+      "longitude": 77.2090266,
+      "altitude_m": 45.59,
+      "speed_mps": 5.28,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 7.0,
+      "latitude": 28.6142539,
+      "longitude": 77.2090274,
+      "altitude_m": 45.69,
+      "speed_mps": 5.3,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 8.0,
+      "latitude": 28.6142989,
+      "longitude": 77.2090282,
+      "altitude_m": 45.78,
+      "speed_mps": 5.3,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 9.0,
+      "latitude": 28.6143439,
+      "longitude": 77.2090288,
+      "altitude_m": 45.87,
+      "speed_mps": 5.29,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 10.0,
+      "latitude": 28.6143889,
+      "longitude": 77.2090294,
+      "altitude_m": 45.96,
+      "speed_mps": 5.27,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 11.0,
+      "latitude": 28.6144339,
+      "longitude": 77.2090299,
+      "altitude_m": 46.05,
+      "speed_mps": 5.24,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 12.0,
+      "latitude": 28.6144789,
+      "longitude": 77.2090303,
+      "altitude_m": 46.13,
+      "speed_mps": 5.2,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 13.0,
+      "latitude": 28.6145239,
+      "longitude": 77.2090306,
+      "altitude_m": 46.21,
+      "speed_mps": 5.15,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 14.0,
+      "latitude": 28.6145688,
+      "longitude": 77.2090309,
+      "altitude_m": 46.29,
+      "speed_mps": 5.1,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 15.0,
+      "latitude": 28.6146138,
+      "longitude": 77.209031,
+      "altitude_m": 46.36,
+      "speed_mps": 5.04,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 16.0,
+      "latitude": 28.6146588,
+      "longitude": 77.209031,
+      "altitude_m": 46.43,
+      "speed_mps": 4.98,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 17.0,
+      "latitude": 28.6147038,
+      "longitude": 77.2090309,
+      "altitude_m": 46.5,
+      "speed_mps": 4.92,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 18.0,
+      "latitude": 28.6147488,
+      "longitude": 77.2090307,
+      "altitude_m": 46.57,
+      "speed_mps": 4.87,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 19.0,
+      "latitude": 28.6147938,
+      "longitude": 77.2090305,
+      "altitude_m": 46.63,
+      "speed_mps": 4.82,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 20.0,
+      "latitude": 28.6148388,
+      "longitude": 77.2090301,
+      "altitude_m": 46.68,
+      "speed_mps": 4.77,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 21.0,
+      "latitude": 28.6148838,
+      "longitude": 77.2090296,
+      "altitude_m": 46.73,
+      "speed_mps": 4.74,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 22.0,
+      "latitude": 28.6149288,
+      "longitude": 77.2090291,
+      "altitude_m": 46.78,
+      "speed_mps": 4.71,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 23.0,
+      "latitude": 28.6149737,
+      "longitude": 77.2090285,
+      "altitude_m": 46.83,
+      "speed_mps": 4.7,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 24.0,
+      "latitude": 28.6150187,
+      "longitude": 77.2090278,
+      "altitude_m": 46.86,
+      "speed_mps": 4.7,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 25.0,
+      "latitude": 28.6150637,
+      "longitude": 77.209027,
+      "altitude_m": 46.9,
+      "speed_mps": 4.71,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 26.0,
+      "latitude": 28.6151087,
+      "longitude": 77.2090262,
+      "altitude_m": 46.93,
+      "speed_mps": 4.73,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 27.0,
+      "latitude": 28.6151537,
+      "longitude": 77.2090253,
+      "altitude_m": 46.95,
+      "speed_mps": 4.77,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 28.0,
+      "latitude": 28.6151987,
+      "longitude": 77.2090243,
+      "altitude_m": 46.97,
+      "speed_mps": 4.81,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 29.0,
+      "latitude": 28.6152437,
+      "longitude": 77.2090234,
+      "altitude_m": 46.99,
+      "speed_mps": 4.86,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 30.0,
+      "latitude": 28.6152887,
+      "longitude": 77.2090224,
+      "altitude_m": 46.99,
+      "speed_mps": 4.92,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 31.0,
+      "latitude": 28.6153336,
+      "longitude": 77.2090214,
+      "altitude_m": 47.0,
+      "speed_mps": 4.98,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 32.0,
+      "latitude": 28.6153786,
+      "longitude": 77.2090204,
+      "altitude_m": 47.0,
+      "speed_mps": 5.03,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 33.0,
+      "latitude": 28.6154236,
+      "longitude": 77.2090194,
+      "altitude_m": 46.99,
+      "speed_mps": 5.09,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 34.0,
+      "latitude": 28.6154686,
+      "longitude": 77.2090184,
+      "altitude_m": 46.98,
+      "speed_mps": 5.15,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 35.0,
+      "latitude": 28.6155136,
+      "longitude": 77.2090175,
+      "altitude_m": 46.97,
+      "speed_mps": 5.2,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 36.0,
+      "latitude": 28.6155586,
+      "longitude": 77.2090166,
+      "altitude_m": 46.95,
+      "speed_mps": 5.24,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 37.0,
+      "latitude": 28.6156036,
+      "longitude": 77.2090157,
+      "altitude_m": 46.92,
+      "speed_mps": 5.27,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 38.0,
+      "latitude": 28.6156486,
+      "longitude": 77.2090149,
+      "altitude_m": 46.89,
+      "speed_mps": 5.29,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 39.0,
+      "latitude": 28.6156936,
+      "longitude": 77.2090141,
+      "altitude_m": 46.86,
+      "speed_mps": 5.3,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 40.0,
+      "latitude": 28.6157385,
+      "longitude": 77.2090134,
+      "altitude_m": 46.82,
+      "speed_mps": 5.3,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 41.0,
+      "latitude": 28.6157835,
+      "longitude": 77.2090128,
+      "altitude_m": 46.77,
+      "speed_mps": 5.28,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 42.0,
+      "latitude": 28.6158285,
+      "longitude": 77.2090123,
+      "altitude_m": 46.73,
+      "speed_mps": 5.26,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 43.0,
+      "latitude": 28.6158735,
+      "longitude": 77.2090118,
+      "altitude_m": 46.67,
+      "speed_mps": 5.22,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 44.0,
+      "latitude": 28.6159185,
+      "longitude": 77.2090115,
+      "altitude_m": 46.62,
+      "speed_mps": 5.18,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 45.0,
+      "latitude": 28.6159635,
+      "longitude": 77.2090112,
+      "altitude_m": 46.56,
+      "speed_mps": 5.12,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 46.0,
+      "latitude": 28.6160085,
+      "longitude": 77.2090111,
+      "altitude_m": 46.49,
+      "speed_mps": 5.07,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 47.0,
+      "latitude": 28.6160535,
+      "longitude": 77.209011,
+      "altitude_m": 46.42,
+      "speed_mps": 5.01,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 48.0,
+      "latitude": 28.6160985,
+      "longitude": 77.209011,
+      "altitude_m": 46.35,
+      "speed_mps": 4.95,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 49.0,
+      "latitude": 28.6161434,
+      "longitude": 77.2090112,
+      "altitude_m": 46.28,
+      "speed_mps": 4.89,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 50.0,
+      "latitude": 28.6161884,
+      "longitude": 77.2090114,
+      "altitude_m": 46.2,
+      "speed_mps": 4.84,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 51.0,
+      "latitude": 28.6162334,
+      "longitude": 77.2090117,
+      "altitude_m": 46.12,
+      "speed_mps": 4.79,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 52.0,
+      "latitude": 28.6162784,
+      "longitude": 77.2090122,
+      "altitude_m": 46.03,
+      "speed_mps": 4.75,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 53.0,
+      "latitude": 28.6163234,
+      "longitude": 77.2090127,
+      "altitude_m": 45.94,
+      "speed_mps": 4.72,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 54.0,
+      "latitude": 28.6163684,
+      "longitude": 77.2090133,
+      "altitude_m": 45.85,
+      "speed_mps": 4.71,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 55.0,
+      "latitude": 28.6164134,
+      "longitude": 77.2090139,
+      "altitude_m": 45.76,
+      "speed_mps": 4.7,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 56.0,
+      "latitude": 28.6164584,
+      "longitude": 77.2090147,
+      "altitude_m": 45.67,
+      "speed_mps": 4.71,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 57.0,
+      "latitude": 28.6165034,
+      "longitude": 77.2090155,
+      "altitude_m": 45.57,
+      "speed_mps": 4.72,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 58.0,
+      "latitude": 28.6165483,
+      "longitude": 77.2090164,
+      "altitude_m": 45.48,
+      "speed_mps": 4.75,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 59.0,
+      "latitude": 28.6165933,
+      "longitude": 77.2090173,
+      "altitude_m": 45.38,
+      "speed_mps": 4.79,
+      "heading_deg": null,
+      "accuracy_m": null
+    },
+    {
+      "timestamp_sec": 60.0,
+      "latitude": 28.6166383,
+      "longitude": 77.2090182,
+      "altitude_m": 45.28,
+      "speed_mps": 4.84,
+      "heading_deg": null,
+      "accuracy_m": null
+    }
+  ],
+  "has_altitude": true,
+  "has_imu": false,
+  "has_rtk": false,
+  "calibration_status": "AUTO_ESTIMATION_REQUIRED_AT_SFM",
+  "intrinsics": null,
+  "bounding_box": {
+    "min_latitude": 28.613939,
+    "max_latitude": 28.6166383,
+    "min_longitude": 77.209011,
+    "max_longitude": 77.209031,
+    "min_altitude_m": 45.0,
+    "max_altitude_m": 47.0
+  },
+  "warnings": [
+    "Sub-HD video resolution detected (1080x1920). 1080p/4K recommended for dense photogrammetry.",
+    "No pre-calibrated camera intrinsics file provided. COLMAP will estimate focal length and distortion parameters automatically."
+  ],
+  "created_at_iso": "2026-09-04T15:53:54Z"
+}
