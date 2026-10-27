@@ -8,53 +8,54 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Geospatial Intelligence Light Theme Palette
+        geo: {
+          bg: '#F5F7FB',         // Main background
+          card: '#FFFFFF',       // Card background
+          primary: '#234A72',    // Primary deep navy
+          'primary-hover': '#1B3B5C',
+          secondary: '#3F7898',  // Secondary slate blue
+          teal: '#368A83',       // Teal accent
+          'teal-hover': '#2C736D',
+          'blue-light': '#EAF2F9',// Light blue panel
+          'mint-light': '#E8F5F0',// Light mint panel
+          'text-main': '#1D2939', // Main dark text
+          'text-sub': '#667085',  // Secondary text
+          'text-muted': '#98A2B3',// Muted text
+          border: '#E1E7EF',     // Border lines
+          'border-focus': '#B9CBE0',
+        },
+        // Retain compatibility space and cyber aliases mapped to the new palette
         space: {
-          950: '#040711',
-          900: '#070c18',
-          850: '#0b1325',
-          800: '#0f1b33',
-          700: '#182749',
-          600: '#233766',
+          950: '#F5F7FB',
+          900: '#FFFFFF',
+          850: '#F0F4FA',
+          800: '#EAF2F9',
+          700: '#E1E7EF',
+          600: '#CAD6E4',
         },
         cyber: {
-          cyan: '#00f0ff',
-          blue: '#0070f3',
-          teal: '#14b8a6',
+          cyan: '#368A83',
+          blue: '#234A72',
+          teal: '#368A83',
           emerald: '#10b981',
           amber: '#f59e0b',
-          rose: '#f43f5e',
-          purple: '#8b5cf6',
+          rose: '#ef4444',
+          purple: '#6366f1',
         }
       },
       fontFamily: {
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'monospace'],
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
-      animation: {
-        'pulse-glow': 'pulseGlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'radar-sweep': 'radarSweep 4s linear infinite',
-        'scanline': 'scanline 8s linear infinite',
-      },
-      keyframes: {
-        pulseGlow: {
-          '0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 8px rgba(0, 240, 255, 0.6))' },
-          '50%': { opacity: '0.4', filter: 'drop-shadow(0 0 2px rgba(0, 240, 255, 0.2))' },
-        },
-        radarSweep: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-        scanline: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(1000%)' },
-        }
-      },
       boxShadow: {
-        'neon-cyan': '0 0 15px rgba(0, 240, 255, 0.3)',
-        'neon-blue': '0 0 20px rgba(0, 112, 243, 0.35)',
-        'neon-amber': '0 0 15px rgba(245, 158, 11, 0.35)',
-        'neon-red': '0 0 15px rgba(244, 63, 94, 0.4)',
-        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+        'geo-sm': '0 1px 2px 0 rgba(16, 24, 40, 0.05)',
+        'geo': '0 1px 3px 0 rgba(16, 24, 40, 0.1), 0 1px 2px -1px rgba(16, 24, 40, 0.1)',
+        'geo-md': '0 4px 8px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.04)',
+        'geo-lg': '0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03)',
+        'geo-xl': '0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03)',
+        'teal-glow': '0 0 15px rgba(54, 138, 131, 0.25)',
+        'primary-glow': '0 0 15px rgba(35, 74, 114, 0.25)',
       }
     },
   },

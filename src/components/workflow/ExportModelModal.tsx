@@ -85,19 +85,19 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-space-950/85 backdrop-blur-md animate-fade-in font-sans">
-      <div className="w-full max-w-2xl rounded-2xl bg-space-900 border border-cyan-500/40 shadow-2xl overflow-hidden font-sans">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in font-sans">
+      <div className="w-full max-w-2xl rounded-2xl bg-white border border-geo-border shadow-geo-xl overflow-hidden font-sans">
         {/* Header */}
-        <div className="p-4 bg-gradient-to-r from-space-850 to-space-800 border-b border-slate-700/80 flex items-center justify-between">
+        <div className="p-4 bg-geo-blue-light border-b border-geo-border flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Download className="w-5 h-5 text-cyan-400" />
-            <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
+            <Download className="w-5 h-5 text-geo-primary" />
+            <h3 className="text-sm font-bold text-geo-primary uppercase font-mono tracking-wider">
               Export 3D Photogrammetry & Geospatial Assets
             </h3>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded text-slate-400 hover:text-white hover:bg-space-700 transition"
+            className="p-1 rounded text-geo-muted hover:text-geo-text hover:bg-white transition"
           >
             <X className="w-4 h-4" />
           </button>
@@ -105,8 +105,8 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
 
         {/* Body */}
         <div className="p-6 space-y-4">
-          <div className="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-xs text-cyan-200 flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+          <div className="p-3 rounded-xl bg-geo-mint/40 border border-emerald-200 text-xs text-emerald-800 flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
             <span>
               <strong>Real File Generator:</strong> Downloads generate valid PLY, CSV, GeoJSON, and JSON files directly to your device.
             </span>
@@ -116,10 +116,10 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
             {exportFormats.map(fmt => (
               <div
                 key={fmt.id}
-                className="p-3.5 rounded-xl bg-space-950/80 border border-slate-800 hover:border-slate-700 flex items-center justify-between gap-4 transition"
+                className="p-3.5 rounded-xl bg-white border border-geo-border shadow-geo-sm hover:border-geo-primary/50 flex items-center justify-between gap-4 transition"
               >
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-space-900 border border-slate-800 text-cyan-400 mt-0.5">
+                  <div className="p-2 rounded-lg bg-geo-bg border border-geo-border text-geo-primary mt-0.5">
                     {fmt.category === 'Point Cloud' ? (
                       <Layers className="w-4 h-4" />
                     ) : fmt.category === 'Camera Trajectory' ? (
@@ -130,10 +130,10 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-bold text-white font-mono">{fmt.name}</span>
-                      <span className="text-[10px] font-mono text-slate-500">{fmt.size}</span>
+                      <span className="text-xs font-bold text-geo-text font-mono">{fmt.name}</span>
+                      <span className="text-[10px] font-mono text-geo-muted">{fmt.size}</span>
                     </div>
-                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                    <p className="text-[11px] text-geo-muted mt-0.5 leading-snug">
                       {fmt.desc}
                     </p>
                   </div>
@@ -144,8 +144,8 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
                   onClick={() => handleExport(fmt)}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold flex items-center gap-1.5 transition flex-shrink-0 ${
                     downloadedItem === fmt.id
-                      ? 'bg-emerald-500 text-space-950 shadow-neon-cyan'
-                      : 'bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40'
+                      ? 'bg-emerald-600 text-white shadow-geo-sm'
+                      : 'bg-geo-blue-light hover:bg-geo-blue-light/80 text-geo-primary border border-geo-border'
                   }`}
                 >
                   {downloadedItem === fmt.id ? (
@@ -167,7 +167,7 @@ export const ExportModelModal: React.FC<ExportModalProps> = ({
           <div className="pt-2 flex justify-end">
             <button
               onClick={onClose}
-              className="px-5 py-2 rounded-xl bg-space-800 hover:bg-space-700 text-slate-200 text-xs font-mono transition"
+              className="px-5 py-2 rounded-xl bg-white hover:bg-geo-bg border border-geo-border text-geo-text text-xs font-mono transition shadow-geo-sm"
             >
               Close
             </button>

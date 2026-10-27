@@ -170,13 +170,13 @@ export const SparsePointCloudViewer: React.FC<SparsePointCloudViewerProps> = ({
   return (
     <div className="space-y-4 font-sans">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-slate-800">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-geo-border">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-wider mb-0.5">
-            <Layers className="w-4 h-4 text-cyan-400" />
+          <div className="flex items-center gap-2 text-xs font-mono text-geo-teal uppercase tracking-wider mb-0.5 font-semibold">
+            <Layers className="w-4 h-4 text-geo-teal" />
             <span>COLMAP Sparse Reconstruction Result</span>
           </div>
-          <h2 className="text-lg font-bold text-white">
+          <h2 className="text-lg font-bold text-geo-primary">
             Sparse 3D Point Cloud & Camera Frustums
           </h2>
         </div>
@@ -185,7 +185,7 @@ export const SparsePointCloudViewer: React.FC<SparsePointCloudViewerProps> = ({
         <div className="flex items-center gap-2 font-mono text-xs">
           <button
             onClick={resetCamera}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-space-900 hover:bg-space-850 border border-slate-700 text-slate-300 transition"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white hover:bg-geo-bg border border-geo-border text-geo-text transition shadow-geo-sm"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Reset View</span>
@@ -194,30 +194,30 @@ export const SparsePointCloudViewer: React.FC<SparsePointCloudViewerProps> = ({
       </div>
 
       {/* 3D Sparse Viewport */}
-      <div className="relative w-full h-[360px] sm:h-[420px] rounded-2xl bg-space-950 border border-cyan-500/30 overflow-hidden shadow-2xl">
+      <div className="relative w-full h-[360px] sm:h-[420px] rounded-2xl bg-slate-900 border border-geo-border overflow-hidden shadow-geo-md">
         <div ref={mountRef} className="w-full h-full" />
 
         {/* Floating Telemetry Badge */}
-        <div className="absolute top-4 left-4 p-2.5 rounded-xl bg-space-950/80 backdrop-blur-md border border-slate-800 font-mono text-xs text-slate-300 space-y-1">
+        <div className="absolute top-4 left-4 p-2.5 rounded-xl bg-black/70 backdrop-blur-md border border-slate-700 font-mono text-xs text-slate-300 space-y-1">
           <div className="flex items-center gap-2 text-cyan-300 font-bold">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
             <span>SPARSE POINT CLOUD (SfM)</span>
           </div>
-          <div className="text-[11px] text-slate-400">
+          <div className="text-[11px] text-slate-300">
             Points: <strong className="text-white">{pointsCount.toLocaleString()}</strong> | Cameras: <strong className="text-emerald-400">{registeredCount}</strong>
           </div>
-          <div className="text-[11px] text-slate-400">
+          <div className="text-[11px] text-slate-300">
             Reprojection Error: <strong className="text-amber-300">{reprojectionError} px</strong>
           </div>
         </div>
       </div>
 
       {/* Navigation Footer */}
-      <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
+      <div className="pt-3 border-t border-geo-border flex items-center justify-between">
         <button
           type="button"
           onClick={onBackToColmap}
-          className="flex items-center gap-2 px-4 py-2 rounded-xl bg-space-850 hover:bg-space-800 text-slate-300 text-xs font-mono transition"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white hover:bg-geo-bg border border-geo-border text-geo-text text-xs font-mono transition shadow-geo-sm"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to SfM Solver</span>
@@ -226,7 +226,7 @@ export const SparsePointCloudViewer: React.FC<SparsePointCloudViewerProps> = ({
         <button
           type="button"
           onClick={onProceedToDense}
-          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-space-950 font-extrabold text-xs shadow-neon-cyan transition"
+          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-geo-primary hover:bg-geo-secondary text-white font-bold text-xs shadow-geo-sm transition"
         >
           <span>Proceed to Dense Reconstruction & Mesh</span>
           <ArrowRight className="w-4 h-4" />

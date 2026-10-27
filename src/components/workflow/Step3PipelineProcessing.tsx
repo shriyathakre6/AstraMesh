@@ -33,30 +33,30 @@ export const Step3PipelineProcessing: React.FC<Step3Props> = ({
   return (
     <div className="space-y-6 font-sans">
       {/* Header Banner with Job ID & Prototype Simulation Badge */}
-      <div className="p-4 rounded-2xl bg-gradient-to-r from-space-900 via-space-850 to-space-900 border border-cyan-500/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shadow-glass">
+      <div className="p-4 rounded-2xl bg-white border border-geo-border shadow-geo-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-wider mb-1">
-            <Cpu className="w-4 h-4 text-cyan-400 animate-spin" style={{ animationDuration: '8s' }} />
+          <div className="flex items-center gap-2 text-xs font-mono text-geo-teal uppercase tracking-wider mb-1 font-semibold">
+            <Cpu className="w-4 h-4 text-geo-teal animate-spin" style={{ animationDuration: '8s' }} />
             <span>AI Reconstruction Kernel Running</span>
-            <span className="text-slate-600">|</span>
-            <span className="text-amber-300 font-bold">JOB ID: {job.id}</span>
+            <span className="text-geo-border">|</span>
+            <span className="text-amber-600 font-bold">JOB ID: {job.id}</span>
           </div>
-          <h2 className="text-lg font-extrabold text-white">
+          <h2 className="text-lg font-extrabold text-geo-primary">
             Single-Pass 3D Photogrammetry Pipeline
           </h2>
         </div>
 
         {/* Mandatory Transparency Badge required by prompt */}
         <div className="flex items-center gap-2">
-          <span className="px-3 py-1.5 rounded-full text-xs font-mono font-bold bg-amber-500/15 border border-amber-500/40 text-amber-300 flex items-center gap-1.5 shadow-neon-amber">
-            <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+          <span className="px-3 py-1.5 rounded-full text-xs font-mono font-bold bg-amber-50 border border-amber-200 text-amber-700 flex items-center gap-1.5">
+            <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
             <span>Simulation / Prototype Mode</span>
           </span>
 
           <button
             type="button"
             onClick={onCancel}
-            className="px-3 py-1.5 rounded-xl bg-space-800 hover:bg-rose-950/60 border border-slate-700 hover:border-rose-500/40 text-slate-300 hover:text-rose-300 text-xs font-mono transition flex items-center gap-1.5"
+            className="px-3 py-1.5 rounded-xl bg-white hover:bg-rose-50 border border-geo-border hover:border-rose-200 text-geo-muted hover:text-rose-600 text-xs font-mono transition flex items-center gap-1.5 shadow-geo-sm"
           >
             <X className="w-3.5 h-3.5" />
             <span>Cancel</span>
@@ -65,30 +65,30 @@ export const Step3PipelineProcessing: React.FC<Step3Props> = ({
       </div>
 
       {/* Global Progress Bar */}
-      <div className="p-4 rounded-xl bg-space-950/80 border border-slate-800 space-y-2">
+      <div className="p-4 rounded-xl bg-white border border-geo-border shadow-geo-sm space-y-2">
         <div className="flex items-center justify-between text-xs font-mono">
           <div className="flex items-center gap-2">
-            <span className="text-cyan-400 font-bold">Current Stage ({currentStage.id}/14):</span>
-            <span className="text-white font-bold">{currentStage.name}</span>
+            <span className="text-geo-primary font-bold">Current Stage ({currentStage.id}/14):</span>
+            <span className="text-geo-text font-bold">{currentStage.name}</span>
           </div>
-          <span className="text-cyan-300 font-bold text-sm">{overallProgress}% Overall</span>
+          <span className="text-geo-teal font-bold text-sm">{overallProgress}% Overall</span>
         </div>
 
-        <div className="w-full bg-space-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+        <div className="w-full bg-geo-bg rounded-full h-2.5 overflow-hidden border border-geo-border">
           <div 
-            className="bg-gradient-to-r from-cyan-500 via-blue-500 to-emerald-400 h-full transition-all duration-300"
+            className="bg-gradient-to-r from-geo-primary via-geo-secondary to-geo-teal h-full transition-all duration-300"
             style={{ width: `${overallProgress}%` }}
           />
         </div>
 
-        <p className="text-[11px] text-slate-400 font-mono">
+        <p className="text-[11px] text-geo-muted font-mono">
           {currentStage.description}
         </p>
       </div>
 
       {/* 14 Conceptual Stages List (2-column responsive layout) */}
       <div className="space-y-2">
-        <div className="flex items-center justify-between text-[11px] font-mono text-slate-400 px-1">
+        <div className="flex items-center justify-between text-[11px] font-mono text-geo-muted px-1 font-semibold">
           <span>PIPELINE STAGE EXECUTION LOG (14 STAGES)</span>
           <span>STATUS / PROGRESS</span>
         </div>
@@ -104,28 +104,28 @@ export const Step3PipelineProcessing: React.FC<Step3Props> = ({
                 key={stage.id}
                 className={`p-2.5 rounded-xl border flex items-center justify-between text-xs font-mono transition-all ${
                   isCompleted
-                    ? 'bg-emerald-950/20 border-emerald-500/30 text-emerald-300'
+                    ? 'bg-geo-mint/40 border-emerald-200 text-emerald-800'
                     : isCurrent
-                    ? 'bg-cyan-950/40 border-cyan-400 text-cyan-200 shadow-neon-cyan'
-                    : 'bg-space-950/50 border-slate-800/80 text-slate-500'
+                    ? 'bg-geo-blue-light border-2 border-geo-primary text-geo-primary shadow-geo-sm'
+                    : 'bg-white border-geo-border text-geo-muted'
                 }`}
               >
                 <div className="flex items-center gap-2.5 overflow-hidden">
-                  <span className="text-[10px] text-slate-500 w-4 text-right flex-shrink-0">
+                  <span className="text-[10px] text-geo-muted w-4 text-right flex-shrink-0">
                     {stage.id}.
                   </span>
 
                   {isCompleted ? (
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                   ) : isCurrent ? (
-                    <RefreshCw className="w-4 h-4 text-cyan-400 animate-spin flex-shrink-0" />
+                    <RefreshCw className="w-4 h-4 text-geo-primary animate-spin flex-shrink-0" />
                   ) : (
-                    <Clock className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+                    <Clock className="w-3.5 h-3.5 text-geo-muted flex-shrink-0" />
                   )}
 
                   <div className="truncate">
                     <span className={`font-bold block truncate ${
-                      isCurrent ? 'text-white' : isCompleted ? 'text-slate-200' : 'text-slate-400'
+                      isCurrent ? 'text-geo-primary' : isCompleted ? 'text-geo-text' : 'text-geo-muted'
                     }`}>
                       {stage.name}
                     </span>
@@ -134,13 +134,13 @@ export const Step3PipelineProcessing: React.FC<Step3Props> = ({
 
                 <div className="text-right flex-shrink-0 pl-2">
                   {isCompleted ? (
-                    <span className="text-emerald-400 font-bold">✓</span>
+                    <span className="text-emerald-600 font-bold">✓</span>
                   ) : isCurrent ? (
-                    <span className="text-cyan-300 font-bold animate-pulse">
+                    <span className="text-geo-primary font-bold animate-pulse">
                       {stage.progress}%
                     </span>
                   ) : (
-                    <span className="text-slate-600">—</span>
+                    <span className="text-geo-muted">—</span>
                   )}
                 </div>
               </div>
@@ -150,12 +150,12 @@ export const Step3PipelineProcessing: React.FC<Step3Props> = ({
       </div>
 
       {/* Note about real photogrammetry backend */}
-      <div className="p-3 rounded-xl bg-space-900 border border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
+      <div className="p-3 rounded-xl bg-white border border-geo-border shadow-geo-sm flex items-center justify-between text-[11px] font-mono text-geo-muted">
         <span className="flex items-center gap-1.5">
-          <Zap className="w-3.5 h-3.5 text-cyan-400" />
+          <Zap className="w-3.5 h-3.5 text-geo-teal" />
           <span>GPU Mesh Worker: WebGL Raymarch Adapter (Asynchronous Job Queue)</span>
         </span>
-        <span className="text-emerald-400 font-semibold">VSync 60 FPS</span>
+        <span className="text-emerald-600 font-semibold">VSync 60 FPS</span>
       </div>
     </div>
   );

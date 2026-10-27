@@ -40,23 +40,23 @@ export const AlertsPage: React.FC = () => {
   const getSeverityIcon = (sev: AlertItem['severity']) => {
     switch (sev) {
       case 'CRITICAL':
-        return <ShieldAlert className="w-5 h-5 text-rose-400 animate-pulse" />;
+        return <ShieldAlert className="w-5 h-5 text-rose-600 animate-pulse" />;
       case 'WARNING':
-        return <AlertTriangle className="w-5 h-5 text-amber-400" />;
+        return <AlertTriangle className="w-5 h-5 text-amber-600" />;
       case 'INFO':
-        return <Info className="w-5 h-5 text-cyan-400" />;
+        return <Info className="w-5 h-5 text-geo-teal" />;
     }
   };
 
   const getCardBorder = (sev: AlertItem['severity'], acknowledged: boolean) => {
-    if (acknowledged) return 'border-slate-800 bg-space-900/40 opacity-70';
+    if (acknowledged) return 'border-geo-border bg-geo-bg opacity-70';
     switch (sev) {
       case 'CRITICAL':
-        return 'border-rose-500/50 bg-gradient-to-r from-rose-950/40 via-space-900 to-space-900 shadow-neon-red';
+        return 'border-rose-300 bg-rose-50/50 shadow-geo-sm';
       case 'WARNING':
-        return 'border-amber-500/40 bg-gradient-to-r from-amber-950/30 via-space-900 to-space-900 shadow-neon-amber';
+        return 'border-amber-300 bg-amber-50/50 shadow-geo-sm';
       case 'INFO':
-        return 'border-cyan-500/30 bg-gradient-to-r from-cyan-950/20 via-space-900 to-space-900';
+        return 'border-geo-border bg-white shadow-geo-sm';
     }
   };
 
@@ -65,28 +65,28 @@ export const AlertsPage: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono text-rose-400 uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-2 text-xs font-mono text-rose-600 uppercase tracking-wider mb-1 font-semibold">
             <Bell className="w-3.5 h-3.5 animate-pulse" />
             <span>Automated Spatial Incident Ledger</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-geo-primary tracking-tight">
             Intelligent Alert Center
           </h1>
-          <p className="text-sm text-slate-400 mt-0.5">
+          <p className="text-sm text-geo-text-sub mt-0.5">
             Prioritized real-time spatial anomalies detected via multi-layer sensor correlation.
           </p>
         </div>
 
         {/* Severity Filter Tabs */}
-        <div className="flex items-center gap-1.5 p-1 rounded-xl bg-space-900 border border-slate-800 font-mono text-xs">
+        <div className="flex items-center gap-2 bg-white p-1 rounded-xl border border-geo-border shadow-geo-sm">
           {(['ALL', 'CRITICAL', 'WARNING', 'INFO'] as const).map(sev => (
             <button
               key={sev}
               onClick={() => setFilterSeverity(sev)}
-              className={`px-3 py-1.5 rounded-lg transition ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono transition ${
                 filterSeverity === sev
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold'
-                  : 'text-slate-400 hover:text-white hover:bg-space-850'
+                  ? 'bg-geo-blue-light text-geo-primary border border-geo-border font-bold'
+                  : 'text-geo-text-sub hover:text-geo-text-main'
               }`}
             >
               {sev}
@@ -95,117 +95,78 @@ export const AlertsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Alert Stats Bar */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="p-4 rounded-xl bg-rose-950/30 border border-rose-500/30 flex items-center justify-between">
-          <div>
-            <span className="text-xs font-mono text-rose-400 uppercase tracking-wider block">
-              Critical Anomalies
-            </span>
-            <span className="text-2xl font-black text-rose-300 font-mono">
-              0{alerts.filter(a => a.severity === 'CRITICAL').length}
-            </span>
-          </div>
-          <ShieldAlert className="w-8 h-8 text-rose-500/60" />
-        </div>
-
-        <div className="p-4 rounded-xl bg-amber-950/30 border border-amber-500/30 flex items-center justify-between">
-          <div>
-            <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block">
-              Telemetry Warnings
-            </span>
-            <span className="text-2xl font-black text-amber-300 font-mono">
-              0{alerts.filter(a => a.severity === 'WARNING').length}
-            </span>
-          </div>
-          <AlertTriangle className="w-8 h-8 text-amber-500/60" />
-        </div>
-
-        <div className="p-4 rounded-xl bg-cyan-950/20 border border-cyan-500/30 flex items-center justify-between">
-          <div>
-            <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider block">
-              Processed Datasets
-            </span>
-            <span className="text-2xl font-black text-cyan-300 font-mono">
-              0{alerts.filter(a => a.severity === 'INFO').length}
-            </span>
-          </div>
-          <Info className="w-8 h-8 text-cyan-500/60" />
-        </div>
-      </div>
-
-      {/* Alert Cards List */}
+      {/* Alerts Feed */}
       <div className="space-y-4">
         {filteredAlerts.map(alert => (
           <div
             key={alert.id}
-            className={`p-5 rounded-2xl border transition-all duration-300 ${getCardBorder(
+            className={`p-5 rounded-2xl border transition-all duration-200 ${getCardBorder(
               alert.severity,
               alert.acknowledged
             )}`}
           >
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-              {/* Left Details */}
-              <div className="flex items-start gap-4">
-                <div className="p-2.5 rounded-xl bg-space-950/80 border border-slate-800 flex-shrink-0 mt-0.5">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div className="flex items-start gap-3.5">
+                <div className="p-2.5 rounded-xl bg-white border border-geo-border shadow-geo-sm mt-0.5">
                   {getSeverityIcon(alert.severity)}
                 </div>
 
-                <div className="space-y-1.5">
+                <div>
                   <div className="flex items-center gap-2 flex-wrap">
-                    <StatusBadge status={alert.severity} size="sm" />
-                    <span className="text-xs font-mono text-slate-400 flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-slate-500" />
-                      <span>{alert.timestamp}</span>
+                    <span className="text-xs font-mono font-bold text-geo-primary">{alert.id}</span>
+                    <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase ${
+                      alert.severity === 'CRITICAL'
+                        ? 'bg-rose-100 text-rose-700'
+                        : alert.severity === 'WARNING'
+                        ? 'bg-amber-100 text-amber-700'
+                        : 'bg-geo-blue-light text-geo-primary'
+                    }`}>
+                      {alert.severity}
                     </span>
-                    {alert.acknowledged && (
-                      <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
-                        ACKNOWLEDGED
-                      </span>
-                    )}
+                    <h3 className="text-sm font-bold text-geo-text-main">{alert.title}</h3>
                   </div>
 
-                  <h3 className="text-base font-bold text-white leading-tight">
-                    {alert.title}
-                  </h3>
-
-                  <p className="text-xs text-slate-300 leading-relaxed max-w-3xl">
+                  <p className="text-xs text-geo-text-main mt-1 leading-relaxed max-w-2xl">
                     {alert.description}
                   </p>
 
-                  <div className="flex items-center gap-4 pt-1 text-xs font-mono text-slate-400 flex-wrap">
-                    <span className="flex items-center gap-1.5 text-slate-300">
-                      <MapPin className="w-3.5 h-3.5 text-cyan-400" />
+                  <div className="flex items-center gap-4 mt-3 text-[11px] font-mono text-geo-text-sub flex-wrap">
+                    <span className="flex items-center gap-1">
+                      <MapPin className="w-3.5 h-3.5 text-geo-teal" />
                       <span>{alert.location}</span>
                     </span>
-                    <span className="text-slate-600">•</span>
-                    <span className="flex items-center gap-1.5 text-slate-300">
-                      <Layers className="w-3.5 h-3.5 text-amber-400" />
-                      <span>Affected Layer: <strong className="text-cyan-300">{alert.affectedLayer}</strong></span>
+                    <span className="text-geo-border">•</span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-geo-text-muted" />
+                      <span>{alert.timestamp}</span>
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Right Action Buttons */}
-              <div className="flex items-center gap-2.5 flex-shrink-0 self-end lg:self-center">
-                {!alert.acknowledged && (
+              {/* Actions */}
+              <div className="flex items-center gap-2 flex-shrink-0 self-end sm:self-center">
+                {!alert.acknowledged ? (
                   <button
                     onClick={() => acknowledgeAlert(alert.id)}
-                    className="px-3.5 py-2 rounded-xl bg-space-850 hover:bg-space-800 border border-slate-700 text-slate-300 text-xs font-mono transition flex items-center gap-1.5"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white hover:bg-geo-blue-light border border-geo-border text-geo-primary text-xs font-semibold shadow-geo-sm transition"
                   >
-                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    <Check className="w-3.5 h-3.5" />
                     <span>Acknowledge</span>
                   </button>
+                ) : (
+                  <span className="text-xs font-mono text-emerald-700 flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-50 border border-emerald-200">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    <span>Acknowledged</span>
+                  </span>
                 )}
 
-                {/* The Crucial "View in 3D" Button */}
                 <button
                   onClick={() => handleViewIn3D(alert)}
-                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-space-950 font-extrabold text-xs shadow-neon-cyan flex items-center gap-2 transition"
+                  className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-geo-primary hover:bg-geo-primary-hover text-white text-xs font-bold shadow-geo-sm transition"
                 >
-                  <Box className="w-4 h-4" />
-                  <span>View in 3D</span>
+                  <Box className="w-3.5 h-3.5" />
+                  <span>Inspect in 3D</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>

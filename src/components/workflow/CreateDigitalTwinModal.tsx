@@ -44,7 +44,6 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
     showToast
   } = useApp();
 
-  // Local draft state
   const [videoMeta, setVideoMeta] = useState<FlightVideoMetadata | null>(
     activeJob?.videoMeta || null
   );
@@ -65,7 +64,6 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
 
   if (!isOpen) return null;
 
-  // 7 Guided Scientific Steps
   const stepsList = [
     { num: 1, name: 'Upload Video', icon: Video },
     { num: 2, name: 'Flight Analysis', icon: Gauge },
@@ -83,12 +81,12 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-space-950/90 backdrop-blur-md animate-fade-in font-sans">
-      <div className="w-full max-w-5xl max-h-[94vh] rounded-2xl bg-space-900 border border-cyan-500/40 shadow-2xl overflow-hidden flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/40 backdrop-blur-sm animate-fade-in font-sans">
+      <div className="w-full max-w-5xl max-h-[94vh] rounded-2xl bg-white border border-geo-border shadow-geo-xl overflow-hidden flex flex-col">
         {/* Modal Top Bar */}
-        <div className="px-6 py-3.5 bg-gradient-to-r from-space-850 via-space-900 to-space-850 border-b border-slate-700/80 flex items-center justify-between">
+        <div className="px-6 py-3.5 bg-geo-primary text-white border-b border-geo-border flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center font-bold font-mono">
+            <div className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 text-cyan-300 flex items-center justify-center font-bold font-mono">
               3D
             </div>
             <div>
@@ -96,11 +94,11 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
                 <h1 className="text-sm sm:text-base font-extrabold text-white tracking-wide">
                   Single-Pass Drone Video Reconstruction
                 </h1>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-500/40">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-cyan-200 font-bold border border-white/20">
                   SIH26158
                 </span>
               </div>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-slate-200">
                 End-to-end pipeline: Ingestion → Frame Sampling → COLMAP SfM → Georeferencing → 3D Reality
               </p>
             </div>
@@ -108,14 +106,14 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
 
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-space-800 transition"
+            className="p-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Stepper Wizard Indicator (7 Steps) */}
-        <div className="px-6 py-2.5 bg-space-950/80 border-b border-slate-800/80 overflow-x-auto">
+        <div className="px-6 py-2.5 bg-geo-bg border-b border-geo-border overflow-x-auto">
           <div className="flex items-center justify-between min-w-[700px]">
             {stepsList.map((st, idx) => {
               const isDone = workflowStep > st.num;
@@ -129,21 +127,21 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
                       if (isDone) setWorkflowStep(st.num);
                     }}
                     className={`flex items-center gap-2 cursor-pointer transition ${
-                      isDone ? 'opacity-90 hover:opacity-100' : isCurrent ? 'opacity-100' : 'opacity-40'
+                      isDone ? 'opacity-90 hover:opacity-100' : isCurrent ? 'opacity-100' : 'opacity-50'
                     }`}
                   >
                     <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-mono font-bold transition-all ${
                       isDone
-                        ? 'bg-emerald-500 text-space-950'
+                        ? 'bg-emerald-600 text-white'
                         : isCurrent
-                        ? 'bg-cyan-400 text-space-950 ring-4 ring-cyan-500/20 shadow-neon-cyan'
-                        : 'bg-space-800 text-slate-400'
+                        ? 'bg-geo-primary text-white shadow-geo-sm'
+                        : 'bg-white border border-geo-border text-geo-text-sub'
                     }`}>
                       {isDone ? <Check className="w-3.5 h-3.5 stroke-[3]" /> : st.num}
                     </div>
 
                     <span className={`text-xs font-bold whitespace-nowrap ${
-                      isCurrent ? 'text-white' : 'text-slate-400'
+                      isCurrent ? 'text-geo-primary' : 'text-geo-text-sub'
                     }`}>
                       {st.name}
                     </span>
@@ -151,7 +149,7 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
 
                   {idx < stepsList.length - 1 && (
                     <div className={`flex-1 h-0.5 mx-2.5 transition-colors ${
-                      workflowStep > st.num ? 'bg-emerald-500/60' : 'bg-slate-800'
+                      workflowStep > st.num ? 'bg-emerald-500' : 'bg-geo-border'
                     }`} />
                   )}
                 </React.Fragment>
@@ -161,7 +159,7 @@ export const CreateDigitalTwinModal: React.FC<CreateModalProps> = ({ isOpen, onC
         </div>
 
         {/* Dynamic Step Content */}
-        <div className="flex-1 p-6 overflow-y-auto">
+        <div className="flex-1 p-6 overflow-y-auto bg-white text-geo-text-main">
           {workflowStep === 1 && (
             <Step1UploadFlightData
               videoMeta={videoMeta}

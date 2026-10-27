@@ -21,10 +21,9 @@ export const ReportsPage: React.FC = () => {
   const { selectedMission, stations, riskZones, alerts, showToast } = useApp();
 
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
-  const [reportReady, setReportReady] = useState<boolean>(true); // Ready by default for instant judge inspection
+  const [reportReady, setReportReady] = useState<boolean>(true);
   const [generationProgress, setGenerationProgress] = useState<string>('');
 
-  // Report Section Toggles
   const [includedSections, setIncludedSections] = useState({
     executiveSummary: true,
     spatialAnalysis: true,
@@ -62,7 +61,6 @@ export const ReportsPage: React.FC = () => {
     showToast('Exporting Dossier: ASTRAMESH3D_MISSION_REPORT_2026.pdf (14.2 MB)...', 'info');
     setTimeout(() => {
       showToast('PDF Export Complete! File saved to Downloads.', 'success');
-      // Trigger native browser print dialog as real fallback
       window.print();
     }, 1200);
   };
@@ -72,99 +70,61 @@ export const ReportsPage: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-2 text-xs font-mono text-geo-teal uppercase tracking-wider mb-1 font-semibold">
             <FileText className="w-3.5 h-3.5" />
             <span>Automated Geospatial Intelligence Dossier</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-geo-primary tracking-tight">
             Generate Intelligence Report
           </h1>
-          <p className="text-sm text-slate-400 mt-0.5">
-            Compile multi-spectral terrain analysis, IoT telemetry, and UAV recon data into a defense-grade executive dossier.
+          <p className="text-sm text-geo-text-sub mt-0.5">
+            Compile unified multi-source geospatial dossiers, 3D terrain cross-sections, and UAV flight telemetry.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
-          {reportReady && (
-            <button
-              onClick={handleExportPDF}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-space-950 font-bold text-xs shadow-neon-cyan transition"
-            >
-              <Download className="w-4 h-4" />
-              <span>Export PDF</span>
-            </button>
-          )}
-
           <button
-            onClick={handleGenerateReport}
-            disabled={isGenerating}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 disabled:opacity-50 text-space-950 font-bold text-xs shadow-neon-cyan transition"
+            onClick={handleExportPDF}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-geo-primary hover:bg-geo-primary-hover text-white font-bold text-xs shadow-geo-sm transition"
           >
-            {isGenerating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
-            <span>{isGenerating ? 'Compiling Report...' : 'Re-Generate Report'}</span>
+            <Download className="w-4 h-4" />
+            <span>Export Official PDF Dossier</span>
           </button>
         </div>
       </div>
 
-      {/* Main Grid: Report Configuration (4 Cols) + Report Preview (8 Cols) */}
+      {/* Main Grid: Configurator (Left 4 Cols) + Dossier Document Preview (Right 8 Cols) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Left Column: Report Scope & Toggles */}
+        {/* Left Side: Report Configuration */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="p-5 rounded-2xl bg-space-900/80 backdrop-blur-md border border-slate-800 shadow-glass space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-              <h3 className="text-xs font-bold text-white uppercase font-mono tracking-wider">
-                Dossier Parameters
+          <div className="p-5 rounded-2xl bg-white border border-geo-border shadow-geo-sm space-y-5">
+            <div className="pb-3 border-b border-geo-border">
+              <h3 className="text-sm font-bold text-geo-primary uppercase font-mono tracking-wider">
+                Dossier Sections
               </h3>
-              <span className="text-[10px] font-mono text-cyan-400">SIH26158 FORMAT</span>
+              <p className="text-[11px] text-geo-text-sub">Select components for inclusion</p>
             </div>
 
-            <div className="space-y-1.5 font-sans">
-              <label className="text-xs font-mono uppercase text-slate-400 font-semibold block">
-                Mission Sector
-              </label>
-              <div className="p-2.5 rounded-lg bg-space-950 border border-slate-800 text-xs text-white font-mono">
-                {selectedMission.name}
-              </div>
-            </div>
-
-            <div className="space-y-1.5 font-sans">
-              <label className="text-xs font-mono uppercase text-slate-400 font-semibold block">
-                Classification Level
-              </label>
-              <div className="p-2.5 rounded-lg bg-space-950 border border-slate-800 text-xs font-mono text-rose-300 font-bold flex items-center justify-between">
-                <span>RESTRICTED // SIH DEFENSE EVALUATION</span>
-                <span className="w-2 h-2 rounded-full bg-rose-500" />
-              </div>
-            </div>
-
-            {/* Exact Required Report Sections Toggles */}
-            <div className="space-y-2 pt-2 border-t border-slate-800">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block font-mono">
-                Include Report Sections
-              </span>
-
-              {[
-                { key: 'executiveSummary', label: 'Executive Summary' },
-                { key: 'spatialAnalysis', label: 'Spatial Analysis' },
-                { key: 'riskAssessment', label: 'Risk Assessment' },
-                { key: 'monitoringData', label: 'Monitoring Data' },
-                { key: 'detectedAnomalies', label: 'Detected Anomalies' },
-                { key: 'recommendations', label: 'Recommendations' },
-                { key: 'droneUAVTelemetry', label: '4K UAV Drone Flight Telemetry' },
-              ].map(sec => (
-                <label
-                  key={sec.key}
-                  className="flex items-center justify-between p-2 rounded-lg bg-space-950/60 border border-slate-800 hover:border-slate-700 cursor-pointer text-xs text-slate-300"
-                >
-                  <span>{sec.label}</span>
+            <div className="space-y-3 text-xs">
+              {Object.entries({
+                executiveSummary: 'Executive Mission Briefing',
+                spatialAnalysis: 'Slope & Curvature Metrology',
+                riskAssessment: 'Hazard Classification Matrix',
+                monitoringData: 'Sensor Network Telemetry Logs',
+                detectedAnomalies: 'Structural & Thermal Anomalies',
+                recommendations: 'Tactical Mitigation Recommendations',
+                droneUAVTelemetry: '4K Drone Photogrammetry Summary',
+              }).map(([key, label]) => (
+                <label key={key} className="flex items-center gap-3 p-2.5 rounded-xl bg-geo-bg border border-geo-border cursor-pointer hover:bg-geo-blue-light/50 transition">
                   <input
                     type="checkbox"
-                    checked={includedSections[sec.key as keyof typeof includedSections]}
+                    checked={includedSections[key as keyof typeof includedSections]}
                     onChange={(e) =>
-                      setIncludedSections(prev => ({ ...prev, [sec.key]: e.target.checked }))
+                      setIncludedSections({ ...includedSections, [key]: e.target.checked })
                     }
-                    className="rounded accent-cyan-400"
+                    className="w-4 h-4 rounded text-geo-primary focus:ring-geo-primary/20"
                   />
+                  <span className="font-semibold text-geo-text-main">{label}</span>
                 </label>
               ))}
             </div>
@@ -172,246 +132,140 @@ export const ReportsPage: React.FC = () => {
             <button
               onClick={handleGenerateReport}
               disabled={isGenerating}
-              className="w-full py-2.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-mono text-xs font-bold transition flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-geo-primary hover:bg-geo-primary-hover disabled:opacity-50 text-white font-extrabold text-xs shadow-geo-sm flex items-center justify-center gap-2 transition"
             >
-              <RefreshCw className={`w-3.5 h-3.5 ${isGenerating ? 'animate-spin' : ''}`} />
-              <span>Update Preview Dossier</span>
+              {isGenerating ? (
+                <>
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                  <span>Synthesizing Dossier...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-4 h-4 text-cyan-300" />
+                  <span>Recompile Intelligence Report</span>
+                </>
+              )}
             </button>
           </div>
         </div>
 
-        {/* Right Column: Generated Report Preview Document */}
+        {/* Right Side: Paper Report Preview */}
         <div className="lg:col-span-8">
-          {/* Processing Screen */}
-          {isGenerating ? (
-            <div className="p-12 rounded-2xl bg-space-900/90 backdrop-blur-md border border-cyan-500/30 shadow-2xl flex flex-col items-center justify-center min-h-[550px] text-center font-mono">
-              <div className="w-16 h-16 rounded-full border-4 border-cyan-500/20 border-t-cyan-400 animate-spin mb-4" />
-              <h3 className="text-base font-bold text-white">Synthesizing Geospatial Dossier</h3>
-              <p className="text-xs text-cyan-300 mt-2">{generationProgress}</p>
-            </div>
-          ) : (
-            /* Professional Document View */
-            <div className="p-6 sm:p-8 rounded-2xl bg-space-900/90 backdrop-blur-xl border border-slate-700/80 shadow-2xl space-y-6 text-slate-200 print:bg-white print:text-black">
-              {/* Document Header */}
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-6 border-b-2 border-cyan-500/40 gap-4">
-                <div>
-                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 tracking-wider uppercase mb-1">
-                    <span>ISRO GEOSPATIAL INTELLIGENCE DOSSIER</span>
-                    <span className="text-slate-600">|</span>
-                    <span className="text-emerald-400">SIH26158</span>
-                  </div>
-                  <h2 className="text-2xl font-black text-white tracking-tight">
-                    ASTRAMESH3D COMPREHENSIVE SPATIAL REPORT
-                  </h2>
-                  <p className="text-xs text-slate-400 font-mono mt-1">
-                    Sector: {selectedMission.name} • Projection: EPSG:4326
-                  </p>
-                </div>
-
-                <div className="text-right font-mono text-xs text-slate-400">
-                  <div>DATE: 02 SEPT 2026</div>
-                  <div>TIME: 14:32:10 IST</div>
-                  <div className="text-rose-400 font-bold mt-0.5">LEVEL 3 RESTRICTED</div>
-                </div>
+          <div className="p-8 sm:p-10 rounded-2xl bg-white border border-geo-border shadow-geo-md text-geo-text-main font-sans space-y-6">
+            {/* Report Header */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between pb-6 border-b-2 border-geo-primary gap-4">
+              <div>
+                <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-geo-teal">
+                  DEFENSE & GEOSPATIAL INTELLIGENCE DOSSIER • SIH26158
+                </span>
+                <h2 className="text-xl sm:text-2xl font-extrabold text-geo-primary mt-1">
+                  AstraMesh3D Spatial Evaluation Report
+                </h2>
+                <p className="text-xs text-geo-text-sub mt-0.5">
+                  Mission: <strong>{selectedMission.name}</strong> • Target Area: <strong>{selectedMission.location}</strong>
+                </p>
               </div>
 
-              {/* 1. Executive Summary */}
-              {includedSections.executiveSummary && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>1. Executive Summary</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-slate-800 text-xs leading-relaxed text-slate-300 space-y-2">
-                    <p>
-                      This report integrates satellite orthomosaics, high-resolution Digital Elevation Models (DEM), 8 on-ground IoT monitoring pods, and 4K UAV photogrammetry into a unified 3D operational picture.
-                    </p>
-                    <p>
-                      Critical spatial instability has been detected in <strong className="text-rose-400 font-semibold">Zone Alpha</strong>, where slope creep velocity has reached 14.2 mm/hr with an overall risk score of <strong>82/100 (HIGH)</strong>. Prompt engineering stabilization and evacuation advisories are recommended for vulnerable downstream infrastructure.
-                    </p>
-                  </div>
-                </section>
-              )}
+              <div className="text-left sm:text-right font-mono text-xs">
+                <div className="font-bold text-geo-primary">CLASSIFICATION: RESTRICTED</div>
+                <div className="text-geo-text-sub text-[11px]">DATE: 03 SEPT 2026</div>
+                <div className="text-geo-teal text-[11px] font-semibold">DATUM: WGS 84 / UTM 43N</div>
+              </div>
+            </div>
 
-              {/* 2. Spatial Analysis */}
-              {includedSections.spatialAnalysis && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>2. Spatial Analysis</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
-                    <div>
-                      <span className="text-[10px] text-slate-500 uppercase block">Surface Area</span>
-                      <span className="text-white font-bold">42.8 km²</span>
-                    </div>
-                    <div>
-                      <span className="text-[10px] text-slate-500 uppercase block">Max Elevation</span>
-                      <span className="text-cyan-300 font-bold">1,450 m AMSL</span>
-                    </div>
-                    <div>
-                      <span className="text-[10px] text-slate-500 uppercase block">Mean Slope</span>
-                      <span className="text-white font-bold">34.2° Gradient</span>
-                    </div>
-                    <div>
-                      <span className="text-[10px] text-slate-500 uppercase block">Active Faults</span>
-                      <span className="text-rose-400 font-bold">2 Shear Zones</span>
-                    </div>
-                  </div>
-                </section>
-              )}
+            {/* Section 1: Executive Summary */}
+            {includedSections.executiveSummary && (
+              <div className="space-y-2">
+                <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-geo-primary border-b border-geo-border pb-1">
+                  1. Executive Mission Briefing
+                </h3>
+                <p className="text-xs text-geo-text-main leading-relaxed">
+                  During automated aerial reconnaissance over the <strong>{selectedMission.name}</strong>, integrated LiDAR and 4K single-pass UAV videogrammetry detected significant geological slope displacement along Transect Alpha. Ground telemetry from 8 monitoring stations confirmed active sub-surface shear stress.
+                </p>
+              </div>
+            )}
 
-              {/* 3. Risk Assessment */}
-              {includedSections.riskAssessment && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>3. Risk Assessment (Zone Alpha Breakdown)</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-rose-500/30 space-y-3 text-xs">
-                    <div className="flex items-center justify-between font-mono">
-                      <span className="font-bold text-white">Zone Alpha (Steep Escarpment Corridor)</span>
-                      <span className="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30 font-bold">
-                        SCORE: 82/100 • HIGH RISK
-                      </span>
-                    </div>
-                    <ul className="space-y-1.5 text-slate-300 list-disc list-inside text-xs">
-                      <li><strong>High terrain instability:</strong> Slope gradient 44.5° with deep talus fracture line.</li>
-                      <li><strong>Increased environmental anomaly:</strong> +3.2°C thermal surge and soil saturation surge.</li>
-                      <li><strong>Infrastructure proximity:</strong> Hydroelectric penstock canal 4.2 km downstream.</li>
-                      <li><strong>Historical change detected:</strong> 14.2% surface vegetative degradation over past 18 months.</li>
-                    </ul>
+            {/* Section 2: Photogrammetry Summary */}
+            {includedSections.droneUAVTelemetry && (
+              <div className="space-y-2">
+                <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-geo-primary border-b border-geo-border pb-1">
+                  2. Single-Pass Drone Photogrammetry Summary
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                  <div className="p-3 rounded-xl bg-geo-bg border border-geo-border">
+                    <span className="text-geo-text-sub text-[10px] block">FLIGHT PLATFORM</span>
+                    <span className="font-bold text-geo-primary">UAV Raven-04</span>
                   </div>
-                </section>
-              )}
+                  <div className="p-3 rounded-xl bg-geo-bg border border-geo-border">
+                    <span className="text-geo-text-sub text-[10px] block">VIDEO RESOLUTION</span>
+                    <span className="font-bold text-geo-primary">3840x2160 (4K)</span>
+                  </div>
+                  <div className="p-3 rounded-xl bg-geo-bg border border-geo-border">
+                    <span className="text-geo-text-sub text-[10px] block">GSD ACCURACY</span>
+                    <span className="font-bold text-geo-teal">0.85 cm/px</span>
+                  </div>
+                  <div className="p-3 rounded-xl bg-geo-bg border border-geo-border">
+                    <span className="text-geo-text-sub text-[10px] block">GEOREFERENCING</span>
+                    <span className="font-bold text-emerald-700">RTK Fixed (±1.4cm)</span>
+                  </div>
+                </div>
+              </div>
+            )}
 
-              {/* 4. Monitoring Data */}
-              {includedSections.monitoringData && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>4. Monitoring Data (Ground Truth Telemetry)</span>
-                  </h3>
-                  <div className="overflow-x-auto rounded-xl border border-slate-800 bg-space-950/80">
-                    <table className="w-full text-left font-mono text-[11px]">
-                      <thead className="bg-space-900 text-slate-400 uppercase text-[10px]">
-                        <tr>
-                          <th className="p-2.5">Station ID</th>
-                          <th className="p-2.5">Zone</th>
-                          <th className="p-2.5">Elevation</th>
-                          <th className="p-2.5">Temp</th>
-                          <th className="p-2.5">Humidity</th>
-                          <th className="p-2.5">Status</th>
+            {/* Section 3: Risk Assessment Table */}
+            {includedSections.riskAssessment && (
+              <div className="space-y-2">
+                <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-geo-primary border-b border-geo-border pb-1">
+                  3. Hazard Classification Matrix
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs font-mono border border-geo-border rounded-xl overflow-hidden">
+                    <thead className="bg-geo-bg border-b border-geo-border text-geo-text-sub text-[10px] uppercase">
+                      <tr>
+                        <th className="p-2.5">Zone Identifier</th>
+                        <th className="p-2.5">Hazard Type</th>
+                        <th className="p-2.5">Severity</th>
+                        <th className="p-2.5">Probability</th>
+                        <th className="p-2.5">Tactical Advisory</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-geo-border text-[11px]">
+                      {riskZones.map(zone => (
+                        <tr key={zone.id} className="hover:bg-geo-bg/40">
+                          <td className="p-2.5 font-bold text-geo-primary">{zone.name}</td>
+                          <td className="p-2.5 text-geo-text-main">{zone.factors[0] || 'Landslide Vulnerability'}</td>
+                          <td className="p-2.5">
+                            <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                              zone.level === 'CRITICAL' ? 'bg-rose-100 text-rose-700' :
+                              zone.level === 'HIGH' ? 'bg-amber-100 text-amber-700' : 'bg-geo-blue-light text-geo-primary'
+                            }`}>
+                              {zone.level}
+                            </span>
+                          </td>
+                          <td className="p-2.5 text-geo-text-main">{zone.score}%</td>
+                          <td className="p-2.5 text-geo-text-sub">{zone.infrastructureRisk}</td>
                         </tr>
-                      </thead>
-                      <tbody className="divide-y divide-slate-800 text-slate-300">
-                        {stations.slice(0, 4).map(s => (
-                          <tr key={s.id}>
-                            <td className="p-2.5 font-bold text-cyan-300">{s.id}</td>
-                            <td className="p-2.5">{s.zone}</td>
-                            <td className="p-2.5">{s.elevation}m</td>
-                            <td className="p-2.5">{s.temperature.toFixed(1)}°C</td>
-                            <td className="p-2.5">{s.humidity}%</td>
-                            <td className="p-2.5">
-                              <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold ${
-                                s.status === 'WARNING' ? 'bg-amber-500/20 text-amber-300' : 'bg-emerald-500/20 text-emerald-300'
-                              }`}>
-                                {s.status}
-                              </span>
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
-              )}
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
 
-              {/* 5. Detected Anomalies */}
-              {includedSections.detectedAnomalies && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>5. Detected Anomalies</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-slate-800 space-y-2 text-xs">
-                    <div className="flex items-center gap-2 text-rose-400 font-bold">
-                      <ShieldAlert className="w-4 h-4" />
-                      <span>CRITICAL: High-risk spatial anomaly in Zone Alpha (14:28:44 IST)</span>
-                    </div>
-                    <p className="text-slate-400 pl-6">
-                      Accelerated slope creep rate (14.2 mm/hr) detected via combined InSAR and AST-04 accelerometer telemetry.
-                    </p>
-                  </div>
-                </section>
-              )}
-
-              {/* 6. 4K UAV Drone Flight Telemetry (User's Exact Specification) */}
-              {includedSections.droneUAVTelemetry && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-amber-400 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <Video className="w-4 h-4" />
-                    <span>6. 4K UAV Drone Aerial Survey Certification</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-amber-500/30 text-xs font-mono space-y-3">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[11px] text-slate-300">
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">MANDATORY VIDEO</span>
-                        <span className="text-white font-bold">4K UHD (3840x2160) 60fps</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">MANDATORY GPS</span>
-                        <span className="text-cyan-300 font-bold">34°17'45.2"N 77°56'48.1"E</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">FLIGHT METADATA</span>
-                        <span className="text-white font-bold">Heading 042° • 18.4 m/s</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">IMU (9-DOF)</span>
-                        <span className="text-white font-bold">Roll +1.2° • Pitch -4.8°</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">BAROMETRIC ALTITUDE</span>
-                        <span className="text-emerald-400 font-bold">1,124.5 m AMSL</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500 text-[10px] block">RTK/PPK GNSS FIX</span>
-                        <span className="text-emerald-400 font-bold">FIXED (±1.4 cm)</span>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              )}
-
-              {/* 7. Recommendations */}
-              {includedSections.recommendations && (
-                <section className="space-y-2">
-                  <h3 className="text-sm font-bold text-cyan-300 uppercase font-mono tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                    <span>7. Strategic Recommendations</span>
-                  </h3>
-                  <div className="p-4 rounded-xl bg-space-950/80 border border-slate-800 space-y-2 text-xs leading-relaxed text-slate-300">
-                    <p>
-                      1. <strong>Immediate Deployment:</strong> Deploy autonomous UAV reconnaissance drone to maintain persistent 4K video surveillance over the Zone Alpha escarpment fault line.
-                    </p>
-                    <p>
-                      2. <strong>Civil Infrastructure Alert:</strong> Issue precautionary diversion advisory for downstream canal maintenance crews.
-                    </p>
-                    <p>
-                      3. <strong>Telemetry Boost:</strong> Increase LoRaWAN polling rate from AST-03 and AST-04 to 1-second burst intervals.
-                    </p>
-                  </div>
-                </section>
-              )}
-
-              {/* Footer Sign-off */}
-              <div className="pt-6 border-t border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span>ASTRAMESH3D v1.0 • SIH26158 SMART INDIA HACKATHON</span>
-                <span className="text-emerald-400">DIGITALLY SIGNED & VERIFIED</span>
+            {/* Footer Sign-off */}
+            <div className="pt-6 border-t border-geo-border flex items-center justify-between text-xs text-geo-text-sub font-mono">
+              <div>
+                <span>AUTHENTICATED BY: </span>
+                <strong className="text-geo-primary">Dr. Shriya Thakre</strong>
+                <span className="block text-[10px] text-geo-text-muted">Lead Geospatial Scientist • ISRO Geospatial Cell</span>
+              </div>
+              <div className="text-right">
+                <span className="px-2.5 py-1 rounded-full bg-geo-mint-light text-geo-teal border border-geo-teal/30 font-bold text-[10px]">
+                  VERIFIED DIGITAL SIGNATURE
+                </span>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

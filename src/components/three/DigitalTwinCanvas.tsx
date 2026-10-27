@@ -759,50 +759,50 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
 
       {/* Top Left Quick HUD Info */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2 pointer-events-none">
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-space-900/80 backdrop-blur-md border border-cyan-500/20 text-xs font-mono text-cyan-300 pointer-events-auto">
-          <Activity className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/95 backdrop-blur-md border border-geo-border shadow-geo-sm text-xs font-mono text-geo-primary pointer-events-auto">
+          <Activity className="w-3.5 h-3.5 text-geo-teal animate-pulse" />
           <span>FPS: {fps}</span>
-          <span className="text-slate-500">|</span>
-          <span className="text-emerald-400 font-semibold">
+          <span className="text-geo-border">|</span>
+          <span className="text-emerald-700 font-semibold">
             {showPointCloud ? 'POINT CLOUD: 1.4M PTS' : 'SURFACE MESH: 385K FACES'}
           </span>
-          <span className="text-slate-500">|</span>
-          <span className="text-cyan-400 font-bold">SINGLE-PASS UAV</span>
+          <span className="text-geo-border">|</span>
+          <span className="text-geo-primary font-bold">SINGLE-PASS UAV</span>
         </div>
 
         {activeMeasurementTool !== 'none' && (
-          <div className="px-3 py-1.5 rounded-md bg-amber-950/80 border border-amber-400 text-xs text-amber-200 font-mono animate-pulse pointer-events-auto flex items-center gap-2">
-            <Ruler className="w-3.5 h-3.5 text-amber-400" />
+          <div className="px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-300 text-xs text-amber-800 font-mono animate-pulse pointer-events-auto flex items-center gap-2 shadow-geo-sm">
+            <Ruler className="w-3.5 h-3.5 text-amber-600" />
             <span>MEASURING: Click points on terrain surface</span>
           </div>
         )}
 
         {hoveredObject && (
-          <div className="px-3 py-1 rounded bg-cyan-950/80 border border-cyan-400 text-xs text-cyan-200 font-mono animate-fade-in pointer-events-auto">
+          <div className="px-3 py-1 rounded bg-white/95 border border-geo-primary text-xs text-geo-primary font-mono animate-fade-in pointer-events-auto shadow-geo-sm">
             TARGET ACQUIRED: {hoveredObject}
           </div>
         )}
       </div>
 
       {/* Floating Viewport Controls Toolbar */}
-      <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 p-1.5 rounded-lg bg-space-900/85 backdrop-blur-md border border-slate-700/60 shadow-glass">
+      <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 p-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-geo-border shadow-geo-md">
         <button
           onClick={resetCamera}
           title="Reset Camera to Default Angle"
-          className="flex items-center gap-1 px-2.5 py-1.5 rounded text-xs font-medium text-slate-300 hover:text-cyan-300 hover:bg-space-800 transition"
+          className="flex items-center gap-1 px-2.5 py-1.5 rounded text-xs font-medium text-geo-muted hover:text-geo-primary hover:bg-geo-bg transition"
         >
           <RotateCcw className="w-3.5 h-3.5" />
           <span className="hidden sm:inline">Reset View</span>
         </button>
 
-        <div className="w-px h-4 bg-slate-700 mx-0.5" />
+        <div className="w-px h-4 bg-geo-border mx-0.5" />
 
         {/* Toggle Point Cloud vs Surface Mesh */}
         <button
           onClick={() => setShowPointCloud(!showPointCloud)}
           title="Toggle Dense Point Cloud vs Solid Mesh"
           className={`px-2.5 py-1.5 rounded text-xs font-mono font-medium transition ${
-            showPointCloud ? 'bg-cyan-500/25 text-cyan-300 border border-cyan-400 font-bold' : 'text-slate-400 hover:bg-space-800'
+            showPointCloud ? 'bg-geo-blue-light text-geo-primary border border-geo-border font-bold' : 'text-geo-muted hover:bg-geo-bg'
           }`}
         >
           {showPointCloud ? 'Point Cloud ON' : 'Point Cloud'}
@@ -813,7 +813,7 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
           onClick={() => setShowFlightTrajectory(!showFlightTrajectory)}
           title="Toggle 3D Flight Trajectory & Waypoint Frustums"
           className={`px-2.5 py-1.5 rounded text-xs font-mono font-medium transition ${
-            showFlightTrajectory ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30' : 'text-slate-400 hover:bg-space-800'
+            showFlightTrajectory ? 'bg-geo-mint/40 text-emerald-800 border border-emerald-200 font-bold' : 'text-geo-muted hover:bg-geo-bg'
           }`}
         >
           Flight Path
@@ -825,21 +825,21 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
           title="Open 3D Measurement Tool (Distance, Area, Height)"
           className={`flex items-center gap-1 px-2.5 py-1.5 rounded text-xs font-medium transition ${
             showMeasurementPanel || activeMeasurementTool !== 'none'
-              ? 'bg-amber-500/20 text-amber-300 border border-amber-400 font-bold shadow-neon-amber'
-              : 'text-slate-400 hover:bg-space-800 hover:text-white'
+              ? 'bg-amber-50 text-amber-800 border border-amber-300 font-bold'
+              : 'text-geo-muted hover:bg-geo-bg hover:text-geo-text'
           }`}
         >
           <Ruler className="w-3.5 h-3.5" />
           <span className="hidden sm:inline">Measure</span>
         </button>
 
-        <div className="w-px h-4 bg-slate-700 mx-0.5" />
+        <div className="w-px h-4 bg-geo-border mx-0.5" />
 
         <button
           onClick={() => setShowLayerPanel(!showLayerPanel)}
           title="Toggle Full Layer Control Panel"
           className={`p-1.5 rounded text-xs transition ${
-            showLayerPanel ? 'bg-cyan-500/20 text-cyan-300' : 'text-slate-400 hover:bg-space-800 hover:text-white'
+            showLayerPanel ? 'bg-geo-blue-light text-geo-primary font-bold' : 'text-geo-muted hover:bg-geo-bg hover:text-geo-text'
           }`}
         >
           <Sliders className="w-4 h-4" />
@@ -849,7 +849,7 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
           <button
             onClick={onExpandFullscreen}
             title="Expand to Full Digital Twin Page"
-            className="p-1.5 rounded text-xs text-slate-400 hover:bg-space-800 hover:text-cyan-300 transition"
+            className="p-1.5 rounded text-xs text-geo-muted hover:bg-geo-bg hover:text-geo-primary transition"
           >
             <Maximize2 className="w-4 h-4" />
           </button>
@@ -857,26 +857,26 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
       </div>
 
       {/* Floating Legend (Bottom Left) */}
-      <div className="absolute bottom-12 left-4 z-10 p-3 rounded-lg bg-space-900/85 backdrop-blur-md border border-slate-700/60 shadow-glass text-xs text-slate-300">
-        <div className="font-semibold text-white mb-2 flex items-center gap-1.5 text-[11px] tracking-wider uppercase">
-          <Compass className="w-3.5 h-3.5 text-cyan-400" />
+      <div className="absolute bottom-12 left-4 z-10 p-3 rounded-xl bg-white/95 backdrop-blur-md border border-geo-border shadow-geo-md text-xs text-geo-text">
+        <div className="font-semibold text-geo-primary mb-2 flex items-center gap-1.5 text-[11px] tracking-wider uppercase">
+          <Compass className="w-3.5 h-3.5 text-geo-teal" />
           <span>Spatial Layer Legend</span>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-1 gap-1.5 font-mono text-[11px]">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-sm bg-cyan-400 shadow-[0_0_8px_rgba(0,240,255,0.7)]" />
+            <span className="w-2.5 h-2.5 rounded-sm bg-geo-primary" />
             <span>{showPointCloud ? 'Point Cloud' : 'Terrain Mesh'}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-sm bg-blue-400" />
+            <span className="w-2.5 h-2.5 rounded-sm bg-geo-secondary" />
             <span>UAV Trajectory</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-sm bg-rose-500 shadow-[0_0_8px_rgba(244,63,94,0.7)]" />
+            <span className="w-2.5 h-2.5 rounded-sm bg-rose-500" />
             <span>Risk Zone</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>Monitoring Station</span>
           </div>
         </div>
@@ -912,28 +912,28 @@ export const DigitalTwinCanvas: React.FC<DigitalTwinCanvasProps> = ({
       )}
 
       {/* Bottom Telemetry & Status Bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-9 z-10 bg-space-950/90 backdrop-blur-md border-t border-cyan-500/20 px-4 flex items-center justify-between text-xs font-mono text-slate-400">
+      <div className="absolute bottom-0 left-0 right-0 h-9 z-10 bg-white/95 backdrop-blur-md border-t border-geo-border px-4 flex items-center justify-between text-xs font-mono text-geo-muted shadow-geo-sm">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 text-cyan-300">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-            <span className="font-semibold text-slate-200">
+          <div className="flex items-center gap-2 text-geo-primary font-semibold">
+            <span className="w-2 h-2 rounded-full bg-geo-teal animate-ping" />
+            <span>
               Single-Pass Drone 3D Twin
             </span>
           </div>
-          <span className="text-slate-600">|</span>
-          <span className="text-slate-300">
+          <span className="text-geo-border">|</span>
+          <span className="text-geo-text">
             {dataLayers.filter(l => l.active).length} of {dataLayers.length} Layers
           </span>
-          <span className="text-slate-600">|</span>
-          <span className="text-emerald-400">GSD: 1.8 cm/px</span>
+          <span className="text-geo-border">|</span>
+          <span className="text-emerald-700 font-semibold">GSD: 1.8 cm/px</span>
         </div>
 
         <div className="hidden sm:flex items-center gap-4 text-[11px]">
           <span>RMSE: 0.72 px</span>
-          <span className="text-slate-600">|</span>
-          <span className="text-cyan-300">EPSG:4326 WGS 84</span>
-          <span className="text-slate-600">|</span>
-          <span className="text-slate-400">ELEV: 620m - 1,450m AMSL</span>
+          <span className="text-geo-border">|</span>
+          <span className="text-geo-primary font-bold">EPSG:4326 WGS 84</span>
+          <span className="text-geo-border">|</span>
+          <span className="text-geo-muted">ELEV: 620m - 1,450m AMSL</span>
         </div>
       </div>
     </div>

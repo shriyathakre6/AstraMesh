@@ -28,23 +28,23 @@ export const StationDetailModal: React.FC<StationDetailModalProps> = ({
   const isWarning = station.status === 'WARNING';
 
   return (
-    <div className="absolute top-16 left-4 sm:left-6 z-30 w-84 sm:w-96 rounded-xl bg-space-900/90 backdrop-blur-xl border border-cyan-500/30 shadow-2xl overflow-hidden animate-fade-in font-sans">
+    <div className="absolute top-16 left-4 sm:left-6 z-30 w-84 sm:w-96 rounded-xl bg-white border border-geo-border shadow-geo-xl overflow-hidden animate-fade-in font-sans">
       {/* Header */}
-      <div className="p-4 bg-gradient-to-r from-space-850 to-space-800 border-b border-slate-700/60 flex items-center justify-between">
+      <div className="p-4 bg-geo-blue-light border-b border-geo-border flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <div className={`p-2 rounded-lg ${isWarning ? 'bg-amber-500/20 text-amber-400' : 'bg-emerald-500/20 text-emerald-400'}`}>
+          <div className={`p-2 rounded-lg ${isWarning ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'}`}>
             <Activity className="w-5 h-5 animate-pulse" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-mono text-base font-bold text-white tracking-wide">{station.id}</span>
+              <span className="font-mono text-base font-bold text-geo-primary tracking-wide">{station.id}</span>
               <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase ${
-                isWarning ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+                isWarning ? 'bg-amber-50 text-amber-700 border border-amber-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
               }`}>
                 {station.status}
               </span>
             </div>
-            <p className="text-xs text-slate-400 font-medium truncate max-w-[190px]">{station.name}</p>
+            <p className="text-xs text-geo-muted font-medium truncate max-w-[190px]">{station.name}</p>
           </div>
         </div>
 
@@ -52,13 +52,13 @@ export const StationDetailModal: React.FC<StationDetailModalProps> = ({
           <button
             onClick={onFocusStation}
             title="Recenter Camera on Station"
-            className="p-1.5 rounded-lg text-slate-400 hover:text-cyan-300 hover:bg-space-700 transition"
+            className="p-1.5 rounded-lg text-geo-muted hover:text-geo-primary hover:bg-white transition"
           >
             <Crosshair className="w-4 h-4" />
           </button>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-space-700 transition"
+            className="p-1.5 rounded-lg text-geo-muted hover:text-geo-text hover:bg-white transition"
           >
             <X className="w-4 h-4" />
           </button>
@@ -69,98 +69,98 @@ export const StationDetailModal: React.FC<StationDetailModalProps> = ({
       <div className="p-4 space-y-3 font-mono text-xs">
         <div className="grid grid-cols-2 gap-2.5">
           {/* Station ID */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <span className="text-[10px] text-slate-400 uppercase tracking-wider">Station ID</span>
-            <span className="text-sm font-bold text-cyan-300">{station.id}</span>
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <span className="text-[10px] text-geo-muted uppercase tracking-wider">Station ID</span>
+            <span className="text-sm font-bold text-geo-primary">{station.id}</span>
           </div>
 
           {/* Location */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <span className="text-[10px] text-slate-400 uppercase tracking-wider">Location</span>
-            <span className="text-sm font-bold text-white truncate">{station.zone}</span>
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <span className="text-[10px] text-geo-muted uppercase tracking-wider">Location</span>
+            <span className="text-sm font-bold text-geo-text truncate">{station.zone}</span>
           </div>
 
           {/* Elevation */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <div className="flex items-center gap-1 text-[10px] text-slate-400 uppercase tracking-wider">
-              <Mountain className="w-3 h-3 text-cyan-400" />
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <div className="flex items-center gap-1 text-[10px] text-geo-muted uppercase tracking-wider">
+              <Mountain className="w-3 h-3 text-geo-teal" />
               <span>Elevation</span>
             </div>
-            <span className="text-sm font-bold text-white">{station.elevation} m</span>
+            <span className="text-sm font-bold text-geo-text">{station.elevation} m</span>
           </div>
 
           {/* Temperature */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <div className="flex items-center gap-1 text-[10px] text-slate-400 uppercase tracking-wider">
-              <Thermometer className={`w-3 h-3 ${isWarning ? 'text-amber-400' : 'text-emerald-400'}`} />
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <div className="flex items-center gap-1 text-[10px] text-geo-muted uppercase tracking-wider">
+              <Thermometer className={`w-3 h-3 ${isWarning ? 'text-amber-600' : 'text-emerald-600'}`} />
               <span>Temperature</span>
             </div>
-            <span className={`text-sm font-bold ${isWarning ? 'text-amber-300' : 'text-white'}`}>
+            <span className={`text-sm font-bold ${isWarning ? 'text-amber-700' : 'text-geo-text'}`}>
               {station.temperature.toFixed(1)}°C
             </span>
           </div>
 
           {/* Data Quality */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <div className="flex items-center gap-1 text-[10px] text-slate-400 uppercase tracking-wider">
-              <ShieldCheck className="w-3 h-3 text-cyan-400" />
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <div className="flex items-center gap-1 text-[10px] text-geo-muted uppercase tracking-wider">
+              <ShieldCheck className="w-3 h-3 text-geo-teal" />
               <span>Data Quality</span>
             </div>
-            <span className="text-sm font-bold text-emerald-400">{station.dataQuality}%</span>
+            <span className="text-sm font-bold text-emerald-600">{station.dataQuality}%</span>
           </div>
 
           {/* Status */}
-          <div className="p-2.5 rounded-lg bg-space-850/80 border border-slate-800 flex flex-col justify-between">
-            <div className="flex items-center gap-1 text-[10px] text-slate-400 uppercase tracking-wider">
-              <Activity className="w-3 h-3 text-cyan-400" />
+          <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border flex flex-col justify-between">
+            <div className="flex items-center gap-1 text-[10px] text-geo-muted uppercase tracking-wider">
+              <Activity className="w-3 h-3 text-geo-primary" />
               <span>Status</span>
             </div>
-            <span className={`text-sm font-bold ${isWarning ? 'text-amber-400' : 'text-emerald-400'}`}>
+            <span className={`text-sm font-bold ${isWarning ? 'text-amber-700' : 'text-emerald-600'}`}>
               {station.status}
             </span>
           </div>
         </div>
 
         {/* Secondary Telemetry Details */}
-        <div className="pt-2 border-t border-slate-800 grid grid-cols-3 gap-2 text-[11px] text-slate-300">
+        <div className="pt-2 border-t border-geo-border grid grid-cols-3 gap-2 text-[11px] text-geo-muted">
           <div className="flex items-center gap-1.5">
-            <Droplets className="w-3.5 h-3.5 text-blue-400" />
+            <Droplets className="w-3.5 h-3.5 text-geo-secondary" />
             <span>{station.humidity}% RH</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <Wifi className="w-3.5 h-3.5 text-cyan-400" />
+            <Wifi className="w-3.5 h-3.5 text-geo-teal" />
             <span>{station.signalStrength} dBm</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <BatteryCharging className="w-3.5 h-3.5 text-emerald-400" />
+            <BatteryCharging className="w-3.5 h-3.5 text-emerald-600" />
             <span>{station.battery}%</span>
           </div>
         </div>
 
         {/* Mini Telemetry Sparkline */}
         <div className="pt-2">
-          <div className="flex items-center justify-between text-[10px] text-slate-400 mb-1">
+          <div className="flex items-center justify-between text-[10px] text-geo-muted mb-1">
             <span>LIVE THERMAL FLUX (PAST 30 MIN)</span>
-            <span className="text-cyan-400">{station.lastUpdate}</span>
+            <span className="text-geo-teal font-semibold">{station.lastUpdate}</span>
           </div>
-          <div className="h-16 w-full rounded bg-space-950/60 border border-slate-800 p-1">
+          <div className="h-16 w-full rounded bg-geo-bg border border-geo-border p-1">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={station.telemetryHistory}>
                 <defs>
                   <linearGradient id={`grad-${station.id}`} x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#00f0ff" stopOpacity={0.4} />
-                    <stop offset="95%" stopColor="#00f0ff" stopOpacity={0.0} />
+                    <stop offset="5%" stopColor="#234A72" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#234A72" stopOpacity={0.0} />
                   </linearGradient>
                 </defs>
                 <XAxis dataKey="time" hide />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: '#070c18', borderColor: '#334155', fontSize: '11px' }}
-                  itemStyle={{ color: '#00f0ff' }}
+                  contentStyle={{ backgroundColor: '#ffffff', borderColor: '#E1E7EF', fontSize: '11px', color: '#1D2939' }}
+                  itemStyle={{ color: '#234A72' }}
                 />
                 <Area 
                   type="monotone" 
                   dataKey="temp" 
-                  stroke="#00f0ff" 
+                  stroke="#234A72" 
                   strokeWidth={2}
                   fillOpacity={1} 
                   fill={`url(#grad-${station.id})`} 
@@ -174,7 +174,7 @@ export const StationDetailModal: React.FC<StationDetailModalProps> = ({
         <div className="pt-2">
           <button
             onClick={onFocusStation}
-            className="w-full py-2 px-3 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-medium text-xs flex items-center justify-center gap-2 transition shadow-neon-cyan"
+            className="w-full py-2 px-3 rounded-lg bg-geo-blue-light hover:bg-geo-blue-light/80 border border-geo-border text-geo-primary font-bold text-xs flex items-center justify-center gap-2 transition shadow-geo-sm"
           >
             <Crosshair className="w-4 h-4" />
             <span>Recenter 3D Digital Twin on {station.id}</span>

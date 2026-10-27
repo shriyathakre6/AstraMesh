@@ -78,15 +78,15 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
   return (
     <div className="space-y-6 font-sans">
       {/* Header Introduction */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-slate-800">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-geo-border">
         <div>
-          <h2 className="text-lg font-bold text-white flex items-center gap-2">
+          <h2 className="text-lg font-bold text-geo-primary flex items-center gap-2">
             <span>Step 1: Upload Drone Flight Data</span>
-            <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+            <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-geo-blue-light text-geo-primary border border-geo-border font-semibold">
               SINGLE-PASS PIPELINE
             </span>
           </h2>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-geo-muted mt-1">
             Provide a continuous video recording from your UAV flight path. No complex ground setup required.
           </p>
         </div>
@@ -95,10 +95,10 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
         <button
           type="button"
           onClick={handleLoadSampleFlight}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold transition shadow-sm"
+          className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-geo-blue-light hover:bg-geo-blue-light/80 border border-geo-border text-geo-primary text-xs font-mono font-bold transition shadow-geo-sm"
           title="Load pre-calibrated 4K UAV flight data for instant demonstration"
         >
-          <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+          <Sparkles className="w-3.5 h-3.5 text-geo-teal" />
           <span>Load Sample 4K Drone Flight</span>
         </button>
       </div>
@@ -108,11 +108,11 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
         <div className="lg:col-span-7 space-y-4">
           <div>
             <div className="flex items-center justify-between mb-1.5">
-              <span className="text-xs font-mono uppercase font-bold text-white flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-cyan-400" />
+              <span className="text-xs font-mono uppercase font-bold text-geo-text flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-geo-teal" />
                 <span>Mandatory Input: Single-Pass Drone Video</span>
               </span>
-              <span className="text-[10px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-500/30">
+              <span className="text-[10px] font-mono text-geo-primary bg-geo-blue-light px-2 py-0.5 rounded border border-geo-border font-bold">
                 REQUIRED
               </span>
             </div>
@@ -141,10 +141,10 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
               }}
               className={`relative border-2 border-dashed rounded-2xl p-6 text-center transition cursor-pointer ${
                 dragActive 
-                  ? 'border-cyan-400 bg-cyan-950/40' 
+                  ? 'border-geo-primary bg-geo-blue-light/40' 
                   : videoMeta 
-                  ? 'border-cyan-500/40 bg-space-950/80' 
-                  : 'border-slate-700 hover:border-slate-600 bg-space-950/50'
+                  ? 'border-geo-teal/50 bg-geo-mint/20' 
+                  : 'border-geo-border hover:border-geo-primary/50 bg-white'
               }`}
             >
               <input
@@ -154,26 +154,26 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
                 className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
               />
 
-              <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mx-auto mb-3">
+              <div className="w-12 h-12 rounded-xl bg-geo-blue-light border border-geo-border text-geo-primary flex items-center justify-center mx-auto mb-3">
                 <Video className="w-6 h-6" />
               </div>
 
               {videoMeta ? (
                 <div className="space-y-1">
-                  <div className="flex items-center justify-center gap-1.5 text-xs font-bold text-emerald-400 font-mono">
+                  <div className="flex items-center justify-center gap-1.5 text-xs font-bold text-emerald-600 font-mono">
                     <CheckCircle2 className="w-4 h-4" />
                     <span>{videoMeta.fileName}</span>
                   </div>
-                  <p className="text-[11px] text-slate-400 font-mono">
+                  <p className="text-[11px] text-geo-muted font-mono">
                     Click or drag another file to replace
                   </p>
                 </div>
               ) : (
                 <div className="space-y-1">
-                  <p className="text-xs font-medium text-slate-200">
-                    Drag and drop your drone flight video, or <span className="text-cyan-400 underline">browse files</span>
+                  <p className="text-xs font-medium text-geo-text">
+                    Drag and drop your drone flight video, or <span className="text-geo-primary font-semibold underline">browse files</span>
                   </p>
-                  <p className="text-[11px] text-slate-400 font-mono">
+                  <p className="text-[11px] text-geo-muted font-mono">
                     Supports MP4, MOV (1080p, 2.7K, 4K UHD up to 4 GB)
                   </p>
                 </div>
@@ -183,40 +183,40 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
 
           {/* Extracted File Details Card */}
           {videoMeta && (
-            <div className="p-4 rounded-xl bg-space-900 border border-slate-800 space-y-3 font-mono text-xs animate-fade-in">
-              <div className="flex items-center justify-between pb-2 border-b border-slate-800">
-                <span className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">
+            <div className="p-4 rounded-xl bg-white border border-geo-border shadow-geo-sm space-y-3 font-mono text-xs animate-fade-in">
+              <div className="flex items-center justify-between pb-2 border-b border-geo-border">
+                <span className="text-[10px] text-geo-muted uppercase font-bold tracking-wider">
                   Analyzed Video Characteristics
                 </span>
-                <span className="text-emerald-400 text-[10px] font-bold">
+                <span className="text-emerald-600 text-[10px] font-bold">
                   ✓ READY FOR SAMPLING
                 </span>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-[11px]">
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">FILE SIZE</span>
-                  <span className="text-white font-bold">{videoMeta.fileSizeMb} MB</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">FILE SIZE</span>
+                  <span className="text-geo-text font-bold">{videoMeta.fileSizeMb} MB</span>
                 </div>
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">RESOLUTION</span>
-                  <span className="text-cyan-300 font-bold">{videoMeta.resolution}</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">RESOLUTION</span>
+                  <span className="text-geo-primary font-bold">{videoMeta.resolution}</span>
                 </div>
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">DURATION</span>
-                  <span className="text-white font-bold">{videoMeta.formattedDuration}</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">DURATION</span>
+                  <span className="text-geo-text font-bold">{videoMeta.formattedDuration}</span>
                 </div>
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">FRAME RATE</span>
-                  <span className="text-emerald-400 font-bold">{videoMeta.fps} FPS</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">FRAME RATE</span>
+                  <span className="text-emerald-600 font-bold">{videoMeta.fps} FPS</span>
                 </div>
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">TOTAL FRAMES</span>
-                  <span className="text-white font-bold">~{videoMeta.estimatedFrames.toLocaleString()}</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">TOTAL FRAMES</span>
+                  <span className="text-geo-text font-bold">~{videoMeta.estimatedFrames.toLocaleString()}</span>
                 </div>
-                <div className="p-2 rounded bg-space-950/80 border border-slate-800">
-                  <span className="text-slate-500 text-[10px] block">FORMAT</span>
-                  <span className="text-slate-300 font-bold">{videoMeta.format}</span>
+                <div className="p-2.5 rounded-lg bg-geo-bg border border-geo-border">
+                  <span className="text-geo-muted text-[10px] block">FORMAT</span>
+                  <span className="text-geo-secondary font-bold">{videoMeta.format}</span>
                 </div>
               </div>
             </div>
@@ -226,30 +226,30 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
         {/* Right Column: Optional Metadata Enhancements (5 cols) */}
         <div className="lg:col-span-5 space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-mono uppercase font-bold text-slate-300 flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-slate-500" />
+            <span className="text-xs font-mono uppercase font-bold text-geo-text flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-geo-secondary" />
               <span>Optional Precision Enhancements</span>
             </span>
-            <span className="text-[10px] font-mono text-slate-400 bg-space-900 px-2 py-0.5 rounded border border-slate-800">
+            <span className="text-[10px] font-mono text-geo-muted bg-geo-bg px-2 py-0.5 rounded border border-geo-border">
               NON-BLOCKING
             </span>
           </div>
 
-          <p className="text-xs text-slate-400 leading-relaxed">
+          <p className="text-xs text-geo-muted leading-relaxed">
             Reconstruction works completely without these files. Adding them unlocks centimeter-level scale and georeferencing.
           </p>
 
           <div className="space-y-2.5 text-xs font-sans">
             {/* Optional 1: GPS Log */}
-            <div className="p-3 rounded-xl bg-space-950/80 border border-slate-800 flex items-center justify-between">
+            <div className="p-3 rounded-xl bg-white border border-geo-border shadow-geo-sm flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <Navigation className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <Navigation className="w-4 h-4 text-geo-primary flex-shrink-0" />
                 <div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-slate-200">GPS / Flight Track</span>
+                    <span className="font-semibold text-geo-text">GPS / Flight Track</span>
                     <TechnicalTooltip term="GPS" />
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400 block">
+                  <span className="text-[10px] font-mono text-geo-muted block">
                     {optionalData.hasGps ? optionalData.gpsFile?.name : '.csv / .gpx / .kml log'}
                   </span>
                 </div>
@@ -260,21 +260,21 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
                   type="checkbox"
                   checked={optionalData.hasGps}
                   onChange={(e) => setOptionalData({ ...optionalData, hasGps: e.target.checked })}
-                  className="rounded accent-cyan-400"
+                  className="rounded accent-geo-primary"
                 />
               </label>
             </div>
 
             {/* Optional 2: IMU Data */}
-            <div className="p-3 rounded-xl bg-space-950/80 border border-slate-800 flex items-center justify-between">
+            <div className="p-3 rounded-xl bg-white border border-geo-border shadow-geo-sm flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <Compass className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <Compass className="w-4 h-4 text-amber-500 flex-shrink-0" />
                 <div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-slate-200">IMU 9-DOF Log</span>
+                    <span className="font-semibold text-geo-text">IMU 9-DOF Log</span>
                     <TechnicalTooltip term="IMU" />
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400 block">
+                  <span className="text-[10px] font-mono text-geo-muted block">
                     {optionalData.hasImu ? optionalData.imuFile?.name : 'Pitch / Roll / Yaw orientation'}
                   </span>
                 </div>
@@ -285,21 +285,21 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
                   type="checkbox"
                   checked={optionalData.hasImu}
                   onChange={(e) => setOptionalData({ ...optionalData, hasImu: e.target.checked })}
-                  className="rounded accent-cyan-400"
+                  className="rounded accent-geo-primary"
                 />
               </label>
             </div>
 
             {/* Optional 3: RTK / PPK Corrections */}
-            <div className="p-3 rounded-xl bg-space-950/80 border border-slate-800 flex items-center justify-between">
+            <div className="p-3 rounded-xl bg-white border border-geo-border shadow-geo-sm flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <FileCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <FileCheck className="w-4 h-4 text-geo-teal flex-shrink-0" />
                 <div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-slate-200">RTK / PPK Base Data</span>
+                    <span className="font-semibold text-geo-text">RTK / PPK Base Data</span>
                     <TechnicalTooltip term="RTK" />
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400 block">
+                  <span className="text-[10px] font-mono text-geo-muted block">
                     {optionalData.hasRtk ? optionalData.rtkFile?.name : 'Centimeter differential GNSS'}
                   </span>
                 </div>
@@ -310,21 +310,21 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
                   type="checkbox"
                   checked={optionalData.hasRtk}
                   onChange={(e) => setOptionalData({ ...optionalData, hasRtk: e.target.checked })}
-                  className="rounded accent-cyan-400"
+                  className="rounded accent-geo-primary"
                 />
               </label>
             </div>
 
             {/* Optional 4: Camera Intrinsics */}
-            <div className="p-3 rounded-xl bg-space-950/80 border border-slate-800 flex items-center justify-between">
+            <div className="p-3 rounded-xl bg-white border border-geo-border shadow-geo-sm flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <FileText className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                <FileText className="w-4 h-4 text-purple-600 flex-shrink-0" />
                 <div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-slate-200">Camera Calibration</span>
+                    <span className="font-semibold text-geo-text">Camera Calibration</span>
                     <TechnicalTooltip term="Camera Intrinsics" />
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400 block">
+                  <span className="text-[10px] font-mono text-geo-muted block">
                     {optionalData.hasIntrinsics ? optionalData.intrinsicsFile?.name : 'Focal length & distortion matrix'}
                   </span>
                 </div>
@@ -335,7 +335,7 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
                   type="checkbox"
                   checked={optionalData.hasIntrinsics}
                   onChange={(e) => setOptionalData({ ...optionalData, hasIntrinsics: e.target.checked })}
-                  className="rounded accent-cyan-400"
+                  className="rounded accent-geo-primary"
                 />
               </label>
             </div>
@@ -344,14 +344,14 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
       </div>
 
       {/* Action Footer */}
-      <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
-        <div className="text-xs text-slate-400 font-mono">
+      <div className="pt-4 border-t border-geo-border flex items-center justify-between">
+        <div className="text-xs text-geo-muted font-mono">
           {videoMeta ? (
-            <span className="text-emerald-400 font-bold">
+            <span className="text-emerald-600 font-bold">
               ✓ Drone video ready. Proceed to flight validation.
             </span>
           ) : (
-            <span className="text-slate-500">
+            <span className="text-geo-muted">
               * Upload a drone video file or click "Load Sample 4K Drone Flight"
             </span>
           )}
@@ -361,7 +361,7 @@ export const Step1UploadFlightData: React.FC<Step1Props> = ({
           type="button"
           disabled={!videoMeta}
           onClick={onContinue}
-          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 disabled:opacity-40 disabled:cursor-not-allowed text-space-950 font-extrabold text-xs shadow-neon-cyan transition"
+          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-geo-primary hover:bg-geo-secondary disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold text-xs shadow-geo-sm transition"
         >
           <span>Validate Flight Video</span>
           <ArrowRight className="w-4 h-4" />

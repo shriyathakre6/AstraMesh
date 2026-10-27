@@ -15,10 +15,10 @@ export const ToastContainer: React.FC = () => {
   };
 
   const borders = {
-    success: 'border-emerald-500/40 bg-emerald-950/90 text-emerald-200',
-    warning: 'border-amber-500/40 bg-amber-950/90 text-amber-200',
-    error: 'border-rose-500/40 bg-rose-950/90 text-rose-200',
-    info: 'border-cyan-500/40 bg-space-900/95 text-cyan-200',
+    success: 'border-emerald-200 bg-white text-emerald-900 shadow-geo-md',
+    warning: 'border-amber-200 bg-white text-amber-900 shadow-geo-md',
+    error: 'border-rose-200 bg-white text-rose-900 shadow-geo-md',
+    info: 'border-geo-border bg-white text-geo-primary shadow-geo-md',
   };
 
   return (
@@ -26,13 +26,13 @@ export const ToastContainer: React.FC = () => {
       {toasts.map(toast => (
         <div
           key={toast.id}
-          className={`flex items-start gap-2.5 p-3 rounded-lg border shadow-2xl backdrop-blur-xl pointer-events-auto transition-all transform translate-y-0 text-xs font-sans ${borders[toast.type]}`}
+          className={`flex items-start gap-2.5 p-3.5 rounded-xl border pointer-events-auto transition-all transform translate-y-0 text-xs font-sans ${borders[toast.type]}`}
         >
           {icons[toast.type]}
           <div className="flex-1 font-medium leading-tight">{toast.message}</div>
           <button
             onClick={() => removeToast(toast.id)}
-            className="text-slate-400 hover:text-white transition"
+            className="text-geo-muted hover:text-geo-text transition"
           >
             <X className="w-3.5 h-3.5" />
           </button>

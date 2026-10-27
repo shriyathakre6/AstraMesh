@@ -40,19 +40,19 @@ export const ProvenancePanel: React.FC<ProvenancePanelProps> = ({ job, onClose }
   ];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-space-950/85 backdrop-blur-md animate-fade-in font-sans">
-      <div className="w-full max-w-2xl max-h-[90vh] rounded-2xl bg-space-900 border border-cyan-500/40 shadow-2xl overflow-hidden flex flex-col font-sans">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-fade-in font-sans">
+      <div className="w-full max-w-2xl max-h-[90vh] rounded-2xl bg-white border border-geo-border shadow-geo-xl overflow-hidden flex flex-col font-sans">
         {/* Header */}
-        <div className="p-4 bg-gradient-to-r from-space-850 to-space-800 border-b border-slate-700/80 flex items-center justify-between">
+        <div className="p-4 bg-geo-primary text-white border-b border-geo-border flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Info className="w-5 h-5 text-cyan-400" />
+            <Info className="w-5 h-5 text-cyan-300" />
             <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
               Reconstruction Provenance & Processing Details
             </h3>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded text-slate-400 hover:text-white hover:bg-space-700 transition"
+            className="p-1 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition"
           >
             <X className="w-4 h-4" />
           </button>
@@ -60,20 +60,20 @@ export const ProvenancePanel: React.FC<ProvenancePanelProps> = ({ job, onClose }
 
         {/* Content Body */}
         <div className="p-5 overflow-y-auto space-y-4 font-mono text-xs">
-          <div className="p-3 rounded-xl bg-space-950/80 border border-slate-800 text-slate-300 space-y-1">
-            <span className="text-[10px] text-cyan-400 uppercase font-bold block">
+          <div className="p-3.5 rounded-xl bg-geo-blue-light border border-geo-border text-geo-text-main space-y-1">
+            <span className="text-[10px] text-geo-primary uppercase font-bold block">
               SIH Scientific Reproducibility Audit
             </span>
-            <p className="text-[11px] text-slate-400 leading-snug">
+            <p className="text-[11px] text-geo-text-sub leading-snug">
               Every stage of the 3D digital twin is traceable to the original drone video and available telemetry sensors.
             </p>
           </div>
 
-          <div className="divide-y divide-slate-800/80 rounded-xl bg-space-950 border border-slate-800 overflow-hidden text-[11px]">
+          <div className="divide-y divide-geo-border rounded-xl bg-geo-bg border border-geo-border overflow-hidden text-[11px]">
             {provenanceItems.map((item, idx) => (
-              <div key={idx} className="p-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 hover:bg-space-900/60 transition">
-                <span className="text-slate-400 font-medium">{item.label}:</span>
-                <span className={`font-bold text-right ${item.highlight ? 'text-cyan-300' : 'text-slate-200'}`}>
+              <div key={idx} className="p-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 hover:bg-geo-blue-light/40 transition">
+                <span className="text-geo-text-sub font-medium">{item.label}:</span>
+                <span className={`font-bold text-right ${item.highlight ? 'text-geo-primary' : 'text-geo-text-main'}`}>
                   {item.value}
                 </span>
               </div>
@@ -83,7 +83,7 @@ export const ProvenancePanel: React.FC<ProvenancePanelProps> = ({ job, onClose }
           <div className="flex justify-end pt-2">
             <button
               onClick={onClose}
-              className="px-5 py-2 rounded-xl bg-space-800 hover:bg-space-700 text-slate-200 text-xs font-mono transition"
+              className="px-5 py-2 rounded-xl bg-geo-primary hover:bg-geo-primary-hover text-white text-xs font-mono font-bold transition shadow-geo-sm"
             >
               Close Details
             </button>
